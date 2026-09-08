@@ -1,0 +1,113 @@
+/* ==========================================================================
+   Rancho Doble — Tipografía de marca
+   --------------------------------------------------------------------------
+   Fuente: Cinzel (SIL Open Font License 1.1) — sustituto libre del serif
+   grabado tipo Copperplate / Engravers del bordado original.
+   Archivos en ./fuentes/ · Licencia en ./fuentes/OFL-Cinzel.txt
+   ========================================================================== */
+
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400 900;          /* fuente variable */
+  font-display: swap;
+  src: url("./fuentes/Cinzel-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+                 U+02DA, U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url("./fuentes/Cinzel-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7,
+                 U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  /* --- Familias --------------------------------------------------------- */
+  --rd-font-marca: "Cinzel", "Engravers MT", "Copperplate", "Copperplate Gothic Light",
+                   "Trajan Pro", Georgia, "Times New Roman", serif;
+  /* Cinzel es una fuente de versales: no tiene minúsculas reales (las mapea a
+     versalitas). Se usa solo para logotipo y títulos; el texto corrido va en un
+     serif de lectura. */
+  --rd-font-texto: Georgia, "Iowan Old Style", "Times New Roman", serif;
+
+  /* --- Rasgos del logotipo --------------------------------------------- */
+  --rd-marca-peso: 600;
+  --rd-marca-tracking: 0.14em;   /* interletrado ancho, como en el bordado */
+  --rd-marca-interlinea: 1.15;
+
+  /* --- Paleta muestreada de las telas ---------------------------------- */
+  --rd-azul-marino: #2E2E43;
+  --rd-beige:       #A59486;
+  --rd-gris:        #46464D;
+  --rd-negro:       #252628;
+  --rd-verde:       #425249;
+
+  /* Hilo del bordado: plata sobre telas oscuras, tono sobre tono en beige */
+  --rd-hilo-claro:  #D9D9DE;
+  --rd-hilo-tono:   #8C7B6D;
+}
+
+/* --------------------------------------------------------------------------
+   Logotipo
+   -------------------------------------------------------------------------- */
+.rd-marca {
+  font-family: var(--rd-font-marca);
+  font-weight: var(--rd-marca-peso);
+  text-transform: uppercase;
+  letter-spacing: var(--rd-marca-tracking);
+  line-height: var(--rd-marca-interlinea);
+  font-feature-settings: "liga" 0;
+  /* El tracking añade espacio a la derecha de la última letra: se compensa
+     para que el bloque quede ópticamente centrado. */
+  text-indent: var(--rd-marca-tracking);
+}
+
+.rd-marca--xl { font-size: clamp(2rem, 6vw, 4.5rem); }
+.rd-marca--l  { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+.rd-marca--m  { font-size: 1.25rem; }
+.rd-marca--s  { font-size: 0.875rem; letter-spacing: 0.18em; } /* tamaños chicos: más aire */
+
+/* Hilo plata sobre tela oscura */
+.rd-marca--hilo        { color: var(--rd-hilo-claro); }
+/* Hilo tono sobre tono (beige) */
+.rd-marca--hilo-tono   { color: var(--rd-hilo-tono); }
+
+/* --------------------------------------------------------------------------
+   Jerarquía de texto
+   -------------------------------------------------------------------------- */
+.rd-titulo {
+  font-family: var(--rd-font-marca);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
+.rd-subtitulo {
+  font-family: var(--rd-font-marca);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.8125rem;
+}
+
+.rd-cuerpo {
+  font-family: var(--rd-font-texto);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------------------------------
+   Fondos de tela
+   -------------------------------------------------------------------------- */
+.rd-tela--azul-marino { background: var(--rd-azul-marino); }
+.rd-tela--beige       { background: var(--rd-beige); }
+.rd-tela--gris        { background: var(--rd-gris); }
+.rd-tela--negro       { background: var(--rd-negro); }
+.rd-tela--verde       { background: var(--rd-verde); }

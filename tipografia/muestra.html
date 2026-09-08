@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rancho Doble — Tipografía</title>
+<link rel="stylesheet" href="tipografia.css">
+<style>
+  body { margin: 0; background: #f5f3f0; color: #252628; font-family: var(--rd-font-texto); }
+  header { padding: 3rem 1.5rem 2rem; max-width: 60rem; margin: 0 auto; }
+  main { max-width: 60rem; margin: 0 auto; padding: 0 1.5rem 4rem; }
+  section { margin-bottom: 3rem; }
+  h2 { font-size: .75rem; letter-spacing: .2em; text-transform: uppercase; color: #7a736c;
+       border-bottom: 1px solid #ddd8d2; padding-bottom: .5rem; margin-bottom: 1.25rem; font-weight: 600; }
+  .telas { display: grid; gap: .75rem; }
+  .tela { display: flex; align-items: center; justify-content: center; min-height: 8rem; padding: 1.5rem; }
+  .tela small { display: block; text-align: center; margin-top: .5rem; opacity: .7;
+                font-size: .6875rem; letter-spacing: .16em; text-transform: uppercase; }
+  .escalas > * + * { margin-top: 1.25rem; }
+  table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+  th, td { text-align: left; padding: .5rem .75rem; border-bottom: 1px solid #e5e0da; }
+  th { font-size: .6875rem; letter-spacing: .12em; text-transform: uppercase; color: #7a736c; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .8125rem; }
+  .swatch { display: inline-block; width: 1.5rem; height: 1.5rem; border-radius: 3px;
+            vertical-align: -.35rem; margin-right: .5rem; border: 1px solid rgba(0,0,0,.15); }
+  .abecedario { font-size: 1.5rem; line-height: 1.9; word-spacing: .25em; }
+</style>
+</head>
+<body>
+<header>
+  <p class="rd-subtitulo" style="color:#7a736c">Manual tipográfico</p>
+  <p class="rd-marca rd-marca--xl" style="margin:.25rem 0 0">Rancho Doble</p>
+</header>
+
+<main>
+  <section>
+    <h2>Logotipo sobre las telas</h2>
+    <div class="telas">
+      <div>
+        <div class="tela rd-tela--azul-marino"><span class="rd-marca rd-marca--l rd-marca--hilo">Rancho Doble</span></div>
+        <small>azul marino · #2E2E43</small>
+      </div>
+      <div>
+        <div class="tela rd-tela--beige"><span class="rd-marca rd-marca--l rd-marca--hilo-tono">Rancho Doble</span></div>
+        <small>beige · #A59486</small>
+      </div>
+      <div>
+        <div class="tela rd-tela--gris"><span class="rd-marca rd-marca--l rd-marca--hilo">Rancho Doble</span></div>
+        <small>gris · #46464D</small>
+      </div>
+      <div>
+        <div class="tela rd-tela--negro"><span class="rd-marca rd-marca--l rd-marca--hilo">Rancho Doble</span></div>
+        <small>negro · #252628</small>
+      </div>
+      <div>
+        <div class="tela rd-tela--verde"><span class="rd-marca rd-marca--l rd-marca--hilo">Rancho Doble</span></div>
+        <small>verde · #425249</small>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Escala</h2>
+    <div class="escalas">
+      <p class="rd-marca rd-marca--xl" style="margin:0">Rancho Doble</p>
+      <p class="rd-marca rd-marca--l" style="margin:0">Rancho Doble</p>
+      <p class="rd-marca rd-marca--m" style="margin:0">Rancho Doble</p>
+      <p class="rd-marca rd-marca--s" style="margin:0">Rancho Doble</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Jerarquía de texto</h2>
+    <p class="rd-titulo" style="font-size:1.75rem;margin:0 0 .5rem">Pantalón de vestir</p>
+    <p class="rd-subtitulo" style="margin:0 0 1rem;color:#7a736c">Cinco colores · corte clásico</p>
+    <p class="rd-cuerpo" style="margin:0;max-width:38rem">
+      Bolsa trasera ribeteada con bordado tono sobre tono en telas claras y en hilo plata
+      sobre telas oscuras. Disponible en azul marino, beige, gris, negro y verde.
+    </p>
+  </section>
+
+  <section>
+    <h2>Juego de caracteres</h2>
+    <p class="rd-marca abecedario" style="margin:0">A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z</p>
+    <p class="rd-marca abecedario" style="margin:0">0 1 2 3 4 5 6 7 8 9 &amp; . , - / Á É Í Ó Ú Ü</p>
+  </section>
+
+  <section>
+    <h2>Especificación</h2>
+    <table>
+      <tr><th>Uso</th><th>Familia</th><th>Peso</th><th>Interletrado</th><th>Caja</th></tr>
+      <tr><td>Logotipo</td><td>Cinzel</td><td>600</td><td>0.14em</td><td>Versales</td></tr>
+      <tr><td>Logotipo &lt; 14px</td><td>Cinzel</td><td>600</td><td>0.18em</td><td>Versales</td></tr>
+      <tr><td>Título</td><td>Cinzel</td><td>700</td><td>0.08em</td><td>Versales</td></tr>
+      <tr><td>Subtítulo</td><td>Cinzel</td><td>400</td><td>0.22em</td><td>Versales</td></tr>
+      <tr><td>Cuerpo</td><td>Georgia (serif de lectura)</td><td>400</td><td>0.01em</td><td>Normal</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Paleta</h2>
+    <table>
+      <tr><th>Color</th><th>HEX</th><th>RGB</th><th>Variable</th></tr>
+      <tr><td><span class="swatch" style="background:#2E2E43"></span>azul marino</td><td><code>#2E2E43</code></td><td><code>46, 46, 67</code></td><td><code>--rd-azul-marino</code></td></tr>
+      <tr><td><span class="swatch" style="background:#A59486"></span>beige</td><td><code>#A59486</code></td><td><code>165, 148, 134</code></td><td><code>--rd-beige</code></td></tr>
+      <tr><td><span class="swatch" style="background:#46464D"></span>gris</td><td><code>#46464D</code></td><td><code>70, 70, 77</code></td><td><code>--rd-gris</code></td></tr>
+      <tr><td><span class="swatch" style="background:#252628"></span>negro</td><td><code>#252628</code></td><td><code>37, 38, 40</code></td><td><code>--rd-negro</code></td></tr>
+      <tr><td><span class="swatch" style="background:#425249"></span>verde</td><td><code>#425249</code></td><td><code>66, 82, 73</code></td><td><code>--rd-verde</code></td></tr>
+      <tr><td><span class="swatch" style="background:#D9D9DE"></span>hilo plata</td><td><code>#D9D9DE</code></td><td><code>217, 217, 222</code></td><td><code>--rd-hilo-claro</code></td></tr>
+      <tr><td><span class="swatch" style="background:#8C7B6D"></span>hilo tono sobre tono</td><td><code>#8C7B6D</code></td><td><code>140, 123, 109</code></td><td><code>--rd-hilo-tono</code></td></tr>
+    </table>
+  </section>
+</main>
+</body>
+</html>
