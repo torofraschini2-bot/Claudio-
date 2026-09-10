@@ -16,6 +16,8 @@ Hay tres medidas para comparar: **5 × 1,5 cm**, **6 × 1,7 cm** y **7 × 2 cm**
 | `mockup-6x1_7cm.png` / `.jpg` | Montaje con la medida intermedia. |
 | `mockup-7x2cm.png` / `.jpg` | Montaje con la medida grande. |
 | `comparativa-medidas.png` | Las tres medidas lado a lado. |
+| `mockup-6x1_7cm-eje-pliegue-medio.png` / `.jpg` | Variante con el eje de la etiqueta justo sobre el pliegue del medio. |
+| `comparativa-centrado.png` | Los dos centrados enfrentados. |
 | `verificacion-centrado.png` | Los tres pliegues marcados en rojo y el eje de la etiqueta en verde. |
 
 ## Criterios de la etiqueta
