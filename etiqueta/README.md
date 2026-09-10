@@ -32,8 +32,9 @@ originales.
   para que quede paralela a la costura.
 - Forma rectangular limpia: bordes rectos, sin recortes irregulares ni
   ondulaciones. Sólo una comba mínima que acompaña el volumen de la cadera.
-- Perspectiva: el extremo derecho se reduce levemente por estar más lejos del
-  lente (25 px de alto a la izquierda, 22 px a la derecha).
+- Rectángulo uniforme: los cuatro lados miden lo mismo (164,00 px arriba y
+  abajo, 49,20 px a izquierda y derecha). Sin estrechamiento por perspectiva ni
+  comba: sólo rotación.
 - Escala tomada del bolsillo (~33 px/cm) → 164 × 49 px sobre la foto de
   1200 × 1200.
 - Reiluminada con el degradado de la propia foto, con microtextura de la tela y
