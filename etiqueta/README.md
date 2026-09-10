@@ -16,6 +16,7 @@ Hay tres medidas para comparar: **5 × 1,5 cm**, **6 × 1,7 cm** y **7 × 2 cm**
 | `mockup-6x1_7cm.png` / `.jpg` | Montaje con la medida intermedia. |
 | `mockup-7x2cm.png` / `.jpg` | Montaje con la medida grande. |
 | `comparativa-medidas.png` | Las tres medidas lado a lado. |
+| `verificacion-centrado.png` | Los tres pliegues marcados en rojo y el eje de la etiqueta en verde. |
 
 ## Criterios de la etiqueta
 
@@ -30,8 +31,13 @@ sus proporciones originales.
 
 ## Criterios del montaje
 
-- Ubicación: apoyada sobre el borde superior del bolsillo de vista, centrada a
-  lo ancho del bolsillo (no en la punta), a ~15 px (≈0,45 cm) del borde.
+- Ubicación: apoyada sobre el borde superior del bolsillo de vista, a ~15 px
+  (≈0,45 cm) del borde.
+- Centrada entre los tres pliegues verticales del panel. Los pliegues se
+  detectan sobre la foto a la altura de la etiqueta (x ≈ 567 / 646 / 770) y la
+  etiqueta se centra entre el pliegue izquierdo y el derecho, con la misma
+  holgura de cada lado. El pliegue del medio no queda exactamente en el eje
+  porque la perspectiva los separa de forma despareja (79 px contra 124 px).
 - Inclinación de 14,5°, medida sobre la línea real del bolsillo en la foto
   (pasa por x=505,y=553 y x=880,y=650), para que quede paralela a la costura.
 - Rectángulo uniforme: los cuatro lados miden lo mismo. Sin estrechamiento por
