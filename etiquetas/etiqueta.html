@@ -1,0 +1,170 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Etiqueta Rancho Doble</title>
+<style>
+  @font-face {
+    font-family: "Cormorant Garamond";
+    src: url("./fuentes/CormorantGaramond-VariableFont_wght.ttf") format("truetype");
+    font-weight: 300 700;
+    font-style: normal;
+  }
+
+  /* Los tres cueros de la muestra: 1 crudo · 2 camel · 3 suela */
+  :root {
+    --cuero:   #E1CE9E;   /* 1 · crudo */
+    --quemado: #6B4F27;   /* color del grabado láser */
+    --canto:   #A38A5C;   /* corte del cuero */
+  }
+  body[data-color="2"] {
+    --cuero:   #B5702F;   /* 2 · camel */
+    --quemado: #4E2F13;
+    --canto:   #8A5C2E;
+  }
+  body[data-color="3"] {
+    --cuero:   #A52E0A;   /* 3 · suela */
+    --quemado: #3E1809;
+    --canto:   #833618;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; }
+
+  body {
+    width: 1200px;
+    height: 1200px;
+    display: grid;
+    place-items: center;
+    background:
+      radial-gradient(120% 100% at 50% 30%, #F4F1EC 0%, #E7E2DA 62%, #DAD4CA 100%);
+    font-family: "Cormorant Garamond", Georgia, serif;
+  }
+
+  /* --- La etiqueta ------------------------------------------------------- */
+  .etiqueta {
+    position: relative;
+    width: 780px;
+    height: 780px;
+    border-radius: 9px;
+    background: var(--cuero);
+    isolation: isolate;
+    box-shadow:
+      0 2px 2px rgba(60, 45, 30, .10),
+      0 14px 26px rgba(60, 45, 30, .22),
+      0 34px 60px rgba(60, 45, 30, .14);
+  }
+
+  /* Veteado suave del cuero (manchas grandes de tono) */
+  .veta {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: #808080;
+    filter: url(#veta);
+    mix-blend-mode: soft-light;
+    opacity: .55;
+  }
+
+  /* Grano picado (flor del cuero) */
+  .grano {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: #808080;
+    filter: url(#grano);
+    mix-blend-mode: soft-light;
+    opacity: .7;
+  }
+
+  /* Luz de la foto + canto del corte */
+  .luz {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+      radial-gradient(80% 65% at 32% 24%, rgba(255,255,255,.20), rgba(255,255,255,0) 70%),
+      linear-gradient(158deg, rgba(255,255,255,.10) 0%, rgba(0,0,0,0) 45%, rgba(0,0,0,.10) 100%);
+    box-shadow:
+      inset 0 0 0 1px color-mix(in srgb, var(--canto) 70%, transparent),
+      inset 0 2px 3px rgba(255,255,255,.22),
+      inset 0 -6px 12px rgba(0,0,0,.10);
+    pointer-events: none;
+  }
+
+  /* --- Logotipo grabado -------------------------------------------------- */
+  .logo {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 54px;
+    color: var(--quemado);
+    mix-blend-mode: multiply;
+    filter:
+      drop-shadow(0 2px 1px color-mix(in srgb, #fff 55%, transparent))
+      drop-shadow(0 -1px 1px rgba(0, 0, 0, .28));
+  }
+
+  .marca { width: 322px; display: block; }
+
+  .palabra {
+    font-size: 116px;
+    font-weight: 600;
+    letter-spacing: .012em;
+    line-height: 1;
+    white-space: nowrap;
+    /* el grabado quema apenas los bordes de la letra */
+    text-shadow: 0 0 1.5px color-mix(in srgb, var(--quemado) 55%, transparent);
+  }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <!-- Flor del cuero: ruido iluminado y recentrado en gris medio, para que el
+       grano dé relieve sin lavar el color del cuero. -->
+  <filter id="grano" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.34 0.40" numOctaves="3" seed="7"/>
+    <feDiffuseLighting surfaceScale="1.6" diffuseConstant="1" lighting-color="#fff">
+      <feDistantLight azimuth="228" elevation="52"/>
+    </feDiffuseLighting>
+    <feComponentTransfer>
+      <feFuncR type="linear" slope="1.25" intercept="-0.60"/>
+      <feFuncG type="linear" slope="1.25" intercept="-0.60"/>
+      <feFuncB type="linear" slope="1.25" intercept="-0.60"/>
+    </feComponentTransfer>
+  </filter>
+
+  <!-- Veteado: manchas grandes de tono, propias del curtido vegetal. -->
+  <filter id="veta" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency="0.0045 0.0060" numOctaves="3" seed="19"/>
+    <feColorMatrix type="matrix" values="1 0 0 0 0  1 0 0 0 0  1 0 0 0 0  0 0 0 0 1"/>
+    <feComponentTransfer>
+      <feFuncR type="linear" slope="0.75" intercept="0.13"/>
+      <feFuncG type="linear" slope="0.75" intercept="0.13"/>
+      <feFuncB type="linear" slope="0.75" intercept="0.13"/>
+    </feComponentTransfer>
+  </filter>
+</svg>
+
+<div class="etiqueta">
+  <div class="veta"></div>
+  <div class="grano"></div>
+
+  <div class="logo">
+    <!-- Marca: arco con patas, cruz centrada y barra de base -->
+    <svg class="marca" viewBox="-5 -5 130 105" fill="none" stroke="currentColor"
+         stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M14 66 V58 A46 52 0 0 1 106 58 V66"/>
+      <path d="M4 66 H14"/>
+      <path d="M106 66 H116"/>
+      <path d="M60 11 V92"/>
+      <path d="M40 52 H80"/>
+      <path d="M2 92 H118"/>
+    </svg>
+
+    <div class="palabra">Rancho Doble</div>
+  </div>
+
+  <div class="luz"></div>
+</div>
