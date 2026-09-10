@@ -26,11 +26,16 @@ originales.
 
 ## Criterios del montaje
 
-- Escala tomada del botón de la pretina (~1,7 cm ≈ 58 px) → la etiqueta mide
-  176 px de ancho en la foto de 1200 × 1200.
-- Inclinación de 8°, entre la línea de la pretina y la del bolsillo.
-- Perspectiva: el extremo derecho se reduce por estar más lejos del lente.
-- Curvatura leve para acompañar el volumen de la cadera.
-- Reiluminada con el degradado de la propia foto, con microtextura de la tela
-  y sombra de contacto hacia abajo y a la derecha (la luz entra desde arriba a
-  la izquierda).
+- Ubicación: apoyada sobre el borde superior del bolsillo de vista, centrada a
+  lo ancho del bolsillo (no en la punta), a ~15 px (≈0,4 cm) del borde.
+- Inclinación de 14,5°, medida sobre la línea real del bolsillo en la foto,
+  para que quede paralela a la costura.
+- Forma rectangular limpia: bordes rectos, sin recortes irregulares ni
+  ondulaciones. Sólo una comba mínima que acompaña el volumen de la cadera.
+- Perspectiva: el extremo derecho se reduce levemente por estar más lejos del
+  lente (25 px de alto a la izquierda, 22 px a la derecha).
+- Escala tomada del bolsillo (~33 px/cm) → 164 × 49 px sobre la foto de
+  1200 × 1200.
+- Reiluminada con el degradado de la propia foto, con microtextura de la tela y
+  sombra de contacto hacia abajo y a la derecha (la luz entra desde arriba a la
+  izquierda).
