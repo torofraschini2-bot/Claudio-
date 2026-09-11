@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<title>Dulce Piel — Cómo comprar (historia)</title>
+<link rel="stylesheet" href="../marca.css">
+<style>
+  .pieza { color: var(--dp-crema); }
+  .contenido {
+    position: absolute; inset: 38px;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 92px 96px 84px;
+    text-align: center;
+  }
+  .logo-iso   { width: 130px; height: 109px; color: var(--dp-crema); }
+  .logo-texto { margin-top: 26px; font-size: 35px; color: var(--dp-crema); }
+
+  .titulo { margin-top: 58px; font-size: 136px; color: #fff; }
+
+  .bloque { display: flex; flex-direction: column; align-items: center; }
+  .bloque + .bloque { margin-top: 76px; }
+  .icono { color: var(--dp-nude); --dp-cursor-borde: #402A22; }
+
+  .etiqueta { margin-top: 28px; font-size: 38px; line-height: 1.2; font-weight: 400; color: var(--dp-crema); }
+
+  .pildora {
+    margin-top: 26px; height: 108px; padding: 0 58px;
+    background: var(--dp-crema-tibia); color: var(--dp-cacao);
+    font-size: 41px; font-weight: 600; letter-spacing: .005em;
+  }
+
+  .dato     { margin-top: 28px; font-size: 50px; line-height: 1.22; }
+  .detalle  { margin-top: 12px; font-size: 38px; color: var(--dp-nude); line-height: 1.35; }
+
+  .pie { margin-top: auto; display: flex; flex-direction: column; align-items: center; width: 100%; }
+  .pie .dp-filete { width: 470px; margin-bottom: 44px; }
+  .contacto { display: flex; align-items: center; gap: 30px; }
+  .contacto .ico { width: 66px; height: 66px; color: var(--dp-crema); }
+  .contacto span { font-size: 52px; font-weight: 600; letter-spacing: .01em; }
+</style>
+
+<body>
+<div class="dp-lienzo dp-lienzo--historia pieza">
+  <div class="dp-fondo-seda"></div>
+  <div class="dp-bokeh" style="width:620px;height:620px;left:-180px;top:210px;background:rgba(217,166,149,.30)"></div>
+  <div class="dp-bokeh" style="width:520px;height:520px;right:-160px;top:980px;background:rgba(232,203,186,.20)"></div>
+  <div class="dp-bokeh" style="width:760px;height:520px;left:180px;bottom:-200px;background:rgba(156,95,81,.35)"></div>
+  <div class="dp-vineta"></div>
+  <div class="dp-grano"></div>
+  <div class="dp-marco"></div>
+
+  <div class="contenido">
+    <i class="logo-iso" data-dp="logo"></i>
+    <div class="dp-marca logo-texto">Dulce Piel</div>
+
+    <h1 class="dp-titulo titulo">Cómo<br>comprar</h1>
+
+    <div class="bloque" style="margin-top:78px">
+      <i class="icono" data-dp="globo" style="width:96px;height:96px"></i>
+      <div class="etiqueta dp-apoyo">Entrá a nuestra web</div>
+      <div class="dp-pildora pildora">DULCEPIELURUGUAY.COM</div>
+    </div>
+
+    <div class="bloque">
+      <i class="icono" data-dp="camion" style="width:104px;height:67px"></i>
+      <div class="dato dp-rotulo">Envío rápido</div>
+      <div class="detalle dp-apoyo">por DAC y Correo, 24 a 48 hs</div>
+    </div>
+
+    <div class="bloque">
+      <i class="icono" data-dp="tarjeta" style="width:96px;height:68px"></i>
+      <div class="dato dp-rotulo">Medios de pago</div>
+      <div class="detalle dp-apoyo">Transferencia bancaria, Mercado Pago<br>o depósito en red de cobranza</div>
+    </div>
+
+    <div class="pie">
+      <div class="dp-filete"></div>
+      <div class="contacto">
+        <i class="ico" data-dp="whatsapp"></i>
+        <span>+598 92 722 531</span>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../marca.js"></script>
+</body>
+</html>

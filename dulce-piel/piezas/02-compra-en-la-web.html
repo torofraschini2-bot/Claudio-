@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<title>Dulce Piel — Comprá en la web (feed)</title>
+<link rel="stylesheet" href="../marca.css">
+<style>
+  .pieza { background: var(--dp-crema-tibia); color: var(--dp-cacao); }
+
+  /* Fondo: papel tibio con halos nude y botánica al aire */
+  .papel {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(52% 42% at 6% 4%,   rgba(232,203,186,.60), transparent 70%),
+      radial-gradient(46% 40% at 96% 96%, rgba(217,166,149,.45), transparent 72%),
+      radial-gradient(40% 34% at 92% 6%,  rgba(167,179,162,.24), transparent 74%),
+      linear-gradient(150deg, #FDF8F3 0%, #F8EDE4 52%, #F3E3D7 100%);
+  }
+  .botanica { position: absolute; color: var(--dp-salvia); opacity: .55; }
+  .botanica--rosa { color: var(--dp-rosa-suave); opacity: .5; }
+
+  .contenido {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 64px 78px 58px; text-align: center;
+  }
+
+  .logo-iso   { width: 96px; height: 80px; color: var(--dp-rosa); }
+  .logo-texto { margin-top: 16px; font-size: 40px; color: var(--dp-cacao); }
+
+  .adorno { display: flex; align-items: center; gap: 16px; margin-top: 22px; }
+  .adorno i { display: block; width: 118px; height: 1px; background: rgba(156,95,81,.45); }
+  .adorno b { display: block; width: 9px; height: 9px; background: var(--dp-dorado);
+              transform: rotate(45deg); }
+
+  .antetitulo { margin-top: 34px; font-size: 42px; font-weight: 500;
+                letter-spacing: .34em; text-indent: .34em; text-transform: uppercase; }
+  .titulo     { margin-top: 6px; font-family: var(--dp-font-display); font-weight: 700;
+                font-style: italic; font-size: 132px; line-height: 1.02;
+                text-transform: uppercase; letter-spacing: .005em; }
+  .subtitulo  { margin-top: 10px; font-size: 30px; font-weight: 400; color: rgba(46,30,25,.62);
+                letter-spacing: .2em; text-indent: .2em; text-transform: uppercase; }
+
+  .pildora-web {
+    margin-top: 44px; width: 100%; height: 128px; padding: 0 44px; gap: 26px;
+    background: var(--dp-cacao); color: var(--dp-crema-tibia);
+    box-shadow: 0 22px 46px rgba(46,30,25,.20);
+    --dp-cursor-borde: #2E1E19;
+  }
+  .pildora-web .globo  { width: 54px; height: 54px; color: var(--dp-nude); flex: none; }
+  .pildora-web .url    { flex: 1; font-size: 48px; font-weight: 500; letter-spacing: .01em;
+                         padding-bottom: 12px; border-bottom: 2px solid rgba(247,237,229,.5); }
+  .pildora-web .flecha { width: 34px; height: 44px; flex: none; }
+
+  .ventajas { margin-top: 52px; display: flex; align-items: stretch; width: 100%; }
+  .ventaja  { flex: 1; display: flex; flex-direction: column; align-items: center;
+              justify-content: flex-start; padding: 0 8px; }
+  .ventaja + .ventaja { border-left: 1px solid rgba(46,30,25,.16); }
+  .ventaja:first-child { flex: .94; }
+  .ventaja:last-child  { flex: 1.12; }
+  .ventaja .ico { color: var(--dp-cacao); }
+  .ventaja p { margin-top: 20px; font-size: 24px; font-weight: 700; line-height: 1.35;
+               letter-spacing: .055em; text-indent: .055em; text-transform: uppercase; }
+
+  .cierre { margin-top: auto; display: flex; flex-direction: column; align-items: center; }
+  .cierre .adorno { margin-bottom: 28px; }
+  .envios { font-size: 34px; font-weight: 700; letter-spacing: .26em; text-indent: .26em;
+            text-transform: uppercase; }
+</style>
+
+<body>
+<div class="dp-lienzo dp-lienzo--feed pieza">
+  <div class="papel"></div>
+
+  <!-- Rama botánica superior izquierda -->
+  <svg class="botanica" style="left:-70px;top:-56px;width:430px;height:430px" viewBox="0 0 200 200"
+       fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M12 6C46 34 74 74 92 122"/>
+    <ellipse cx="34" cy="20" rx="19" ry="12" transform="rotate(-24 34 20)"/>
+    <ellipse cx="26" cy="46" rx="18" ry="11.5" transform="rotate(18 26 46)"/>
+    <ellipse cx="56" cy="44" rx="18" ry="11.5" transform="rotate(-40 56 44)"/>
+    <ellipse cx="48" cy="74" rx="17" ry="11" transform="rotate(14 48 74)"/>
+    <ellipse cx="78" cy="76" rx="17" ry="11" transform="rotate(-46 78 76)"/>
+    <ellipse cx="70" cy="106" rx="16" ry="10.5" transform="rotate(10 70 106)"/>
+    <ellipse cx="98" cy="112" rx="15" ry="10" transform="rotate(-50 98 112)"/>
+  </svg>
+
+  <!-- Rama botánica inferior derecha -->
+  <svg class="botanica botanica--rosa" style="right:-64px;bottom:-52px;width:400px;height:400px"
+       viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M188 194c-34-28-62-68-80-116"/>
+    <ellipse cx="166" cy="180" rx="19" ry="12" transform="rotate(-24 166 180)"/>
+    <ellipse cx="174" cy="154" rx="18" ry="11.5" transform="rotate(18 174 154)"/>
+    <ellipse cx="144" cy="156" rx="18" ry="11.5" transform="rotate(-40 144 156)"/>
+    <ellipse cx="152" cy="126" rx="17" ry="11" transform="rotate(14 152 126)"/>
+    <ellipse cx="122" cy="124" rx="17" ry="11" transform="rotate(-46 122 124)"/>
+    <ellipse cx="130" cy="94" rx="16" ry="10.5" transform="rotate(10 130 94)"/>
+    <ellipse cx="102" cy="88" rx="15" ry="10" transform="rotate(-50 102 88)"/>
+  </svg>
+
+  <div class="dp-grano" style="opacity:.10"></div>
+
+  <div class="contenido">
+    <i class="logo-iso" data-dp="logo"></i>
+    <div class="dp-marca logo-texto">Dulce Piel</div>
+    <div class="adorno"><i></i><b></b><i></i></div>
+
+    <div class="antetitulo">Comprá</div>
+    <h1 class="titulo">En la web</h1>
+    <div class="subtitulo">Rápido, fácil y seguro</div>
+
+    <div class="dp-pildora pildora-web">
+      <i class="globo" data-dp="globoSimple"></i>
+      <span class="url">dulcepieluruguay.com</span>
+      <svg class="flecha" viewBox="0 0 24 30" fill="currentColor"><path d="M2 2l19 9-8 2.5L10.5 22z"/></svg>
+    </div>
+
+    <div class="ventajas">
+      <div class="ventaja">
+        <i class="ico" data-dp="escudo" style="width:58px;height:66px"></i>
+        <p>100%<br>confiable</p>
+      </div>
+      <div class="ventaja">
+        <i class="ico" data-dp="candado" style="width:56px;height:66px"></i>
+        <p>Pago seguro<br>y protegido</p>
+      </div>
+      <div class="ventaja">
+        <i class="ico" data-dp="tarjeta" style="width:78px;height:55px;margin-top:8px"></i>
+        <p>Mercado Pago,<br>transferencia o red</p>
+      </div>
+    </div>
+
+    <div class="cierre">
+      <div class="adorno"><i></i><b></b><i></i></div>
+      <div class="envios">Envíos a todo el país</div>
+    </div>
+  </div>
+</div>
+<script src="../marca.js"></script>
+</body>
+</html>
