@@ -1,6 +1,6 @@
 # Dulce Piel — Piezas de Instagram
 
-Las mismas cinco piezas de Rancho Doble, rehechas con identidad propia de
+Las mismas ocho piezas de Rancho Doble, rehechas con identidad propia de
 Dulce Piel: logotipo tipográfico, otra paleta y otras tipografías, con la
 misma estructura y jerarquía de información.
 
@@ -13,6 +13,9 @@ misma estructura y jerarquía de información.
 | `salida/03-destacada-envios.png` | 1080×1920 | Portada de destacada: envíos |
 | `salida/04-destacada-web.png` | 1080×1920 | Portada de destacada: web |
 | `salida/05-envios-a-todo-el-pais.png` | 1080×1920 | Historia "Envíos a todo el país" |
+| `salida/06-destacada-pagos.png` | 1080×1920 | Portada de destacada: medios de pago |
+| `salida/07-compra-por-mensaje.png` | 1080×1080 | Posteo de feed "Comprá por mensaje" |
+| `salida/08-te-lo-llevamos.png` | 1080×1080 | Posteo de feed "Te lo llevamos a todo el país" |
 
 Los HTML que las generan están en `piezas/`. Para volver a exportarlas después
 de tocar un texto o un color:
@@ -28,6 +31,7 @@ Usa el Chromium que ya viene instalado; si está en otra ruta:
 
 - Web: **dulcepieluruguay.com**
 - WhatsApp: **092 722 531** (`+598 92 722 531` en la historia de "Cómo comprar")
+- Instagram: **@dulcepieluruguay** (en "Comprá por mensaje")
 - Envíos: DAC y Correo, 24 a 48 hs, a todo el país
 - Medios de pago: transferencia bancaria, Mercado Pago o depósito en red de cobranza
 
@@ -56,6 +60,8 @@ Las tres son de Google Fonts (SIL Open Font License 1.1) y están incluidas en
 - **Playfair Display** — títulos ("CÓMO COMPRAR", "ENVÍOS A TODO EL PAÍS" y el
   "EN LA WEB" en itálica del feed).
 - **Poppins** — todo el texto de lectura, rótulos y números.
+- **Parisienne** — el remate manuscrito "¡Estamos para ayudarte!" de "Comprá
+  por mensaje".
 
 ## Cómo cambiar cosas
 

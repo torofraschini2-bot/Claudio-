@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<title>Dulce Piel — Comprá por mensaje (feed)</title>
+<link rel="stylesheet" href="../marca.css">
+<style>
+  .pieza { background: var(--dp-crema-tibia); color: var(--dp-cacao); }
+  .papel {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(50% 40% at 4% 6%,   rgba(232,203,186,.58), transparent 70%),
+      radial-gradient(46% 40% at 98% 94%, rgba(217,166,149,.42), transparent 72%),
+      radial-gradient(38% 32% at 94% 8%,  rgba(167,179,162,.22), transparent 74%),
+      linear-gradient(150deg, #FDF8F3 0%, #F8EDE4 54%, #F3E3D7 100%);
+  }
+  .botanica { position: absolute; color: var(--dp-salvia); opacity: .5; }
+  .botanica--rosa { color: var(--dp-rosa-suave); opacity: .46; }
+
+  .contenido {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 76px 74px 54px; text-align: center;
+  }
+  .logo-texto { font-size: 46px; color: var(--dp-cacao); }
+  .adorno { display: flex; align-items: center; gap: 16px; margin-top: 16px; }
+  .adorno i { display: block; width: 118px; height: 1px; background: rgba(156,95,81,.45); }
+  .adorno b { display: block; width: 9px; height: 9px; background: var(--dp-dorado);
+              transform: rotate(45deg); }
+
+  .antetitulo { margin-top: 28px; font-size: 40px; font-weight: 500;
+                letter-spacing: .34em; text-indent: .34em; text-transform: uppercase; }
+  .titulo     { margin-top: 4px; font-family: var(--dp-font-display); font-weight: 700;
+                font-style: italic; font-size: 106px; line-height: 1.02;
+                text-transform: uppercase; }
+  .subtitulo  { margin-top: 8px; font-size: 28px; font-weight: 400; color: rgba(46,30,25,.6);
+                letter-spacing: .2em; text-indent: .2em; text-transform: uppercase; }
+
+  /* Canales de contacto */
+  .canales { margin-top: 34px; width: 100%; display: flex; flex-direction: column; gap: 16px; }
+  .canal   { display: flex; align-items: center; }
+  .canal .insignia {
+    flex: none; width: 90px; height: 90px; border-radius: 50%;
+    background: var(--dp-cacao); color: var(--dp-crema-tibia);
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 12px 26px rgba(46,30,25,.22); z-index: 1;
+  }
+  .canal .insignia i { display: block; }
+  .canal .barra {
+    flex: 1; margin-left: -28px; height: 86px; border-radius: 0 999px 999px 0;
+    background: rgba(46,30,25,.075);
+    display: flex; align-items: center; padding-left: 56px; text-align: left;
+  }
+  .canal .via {
+    font-size: 28px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .1em; color: rgba(46,30,25,.62); width: 290px;
+  }
+  .canal .raya { width: 1px; height: 42px; background: rgba(46,30,25,.22); margin-right: 32px; }
+  .canal .dato { font-size: 38px; font-weight: 600; }
+
+  /* Beneficios */
+  .beneficios { margin-top: 30px; width: 100%; display: flex; flex-direction: column;
+                align-items: flex-start; gap: 14px; padding-left: 24px; }
+  .beneficio  { display: flex; align-items: center; gap: 22px; }
+  .beneficio .ok {
+    flex: none; width: 42px; height: 42px; border-radius: 50%;
+    background: var(--dp-rosa); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .beneficio .ok i { display: block; width: 28px; height: 28px; }
+  .beneficio span { font-size: 34px; font-weight: 400; }
+
+  .firma { margin-top: auto; font-family: var(--dp-font-firma); font-size: 74px;
+           line-height: 1.35; color: var(--dp-rosa); }
+</style>
+
+<body>
+<div class="dp-lienzo dp-lienzo--feed pieza">
+  <div class="papel"></div>
+
+  <svg class="botanica" style="left:-78px;top:-62px;width:400px;height:400px" viewBox="0 0 200 200"
+       fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M12 6C46 34 74 74 92 122"/>
+    <ellipse cx="34" cy="20" rx="19" ry="12" transform="rotate(-24 34 20)"/>
+    <ellipse cx="26" cy="46" rx="18" ry="11.5" transform="rotate(18 26 46)"/>
+    <ellipse cx="56" cy="44" rx="18" ry="11.5" transform="rotate(-40 56 44)"/>
+    <ellipse cx="48" cy="74" rx="17" ry="11" transform="rotate(14 48 74)"/>
+    <ellipse cx="78" cy="76" rx="17" ry="11" transform="rotate(-46 78 76)"/>
+    <ellipse cx="70" cy="106" rx="16" ry="10.5" transform="rotate(10 70 106)"/>
+  </svg>
+  <svg class="botanica botanica--rosa" style="right:-72px;bottom:-58px;width:372px;height:372px"
+       viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M188 194c-34-28-62-68-80-116"/>
+    <ellipse cx="166" cy="180" rx="19" ry="12" transform="rotate(-24 166 180)"/>
+    <ellipse cx="174" cy="154" rx="18" ry="11.5" transform="rotate(18 174 154)"/>
+    <ellipse cx="144" cy="156" rx="18" ry="11.5" transform="rotate(-40 144 156)"/>
+    <ellipse cx="152" cy="126" rx="17" ry="11" transform="rotate(14 152 126)"/>
+    <ellipse cx="122" cy="124" rx="17" ry="11" transform="rotate(-46 122 124)"/>
+    <ellipse cx="130" cy="94" rx="16" ry="10.5" transform="rotate(10 130 94)"/>
+  </svg>
+
+  <div class="dp-grano" style="opacity:.10"></div>
+
+  <div class="contenido">
+    <div class="dp-marca logo-texto">Dulce Piel</div>
+    <div class="adorno"><i></i><b></b><i></i></div>
+
+    <div class="antetitulo">Comprá</div>
+    <h1 class="titulo">Por mensaje</h1>
+    <div class="subtitulo">Escribinos como quieras</div>
+
+    <div class="canales">
+      <div class="canal">
+        <div class="insignia"><i data-dp="whatsapp" style="width:50px;height:50px"></i></div>
+        <div class="barra">
+          <div class="via">Por WhatsApp</div><div class="raya"></div>
+          <div class="dato">092 722 531</div>
+        </div>
+      </div>
+      <div class="canal">
+        <div class="insignia"><i data-dp="instagram" style="width:48px;height:48px"></i></div>
+        <div class="barra">
+          <div class="via">Por Instagram</div><div class="raya"></div>
+          <div class="dato">@dulcepieluruguay</div>
+        </div>
+      </div>
+      <div class="canal">
+        <div class="insignia"><i data-dp="avion" style="width:44px;height:44px"></i></div>
+        <div class="barra">
+          <div class="via">Por mensaje</div><div class="raya"></div>
+          <div class="dato">Enviános un DM</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="beneficios">
+      <div class="beneficio"><span class="ok"><i data-dp="tilde"></i></span><span>Te asesoramos con tu compra</span></div>
+      <div class="beneficio"><span class="ok"><i data-dp="tilde"></i></span><span>Te ayudamos a elegir tu producto</span></div>
+      <div class="beneficio"><span class="ok"><i data-dp="tilde"></i></span><span>Respondemos todas tus dudas</span></div>
+    </div>
+
+    <div class="firma">¡Estamos para ayudarte!</div>
+  </div>
+</div>
+<script src="../marca.js"></script>
+</body>
+</html>

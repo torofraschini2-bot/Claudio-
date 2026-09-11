@@ -76,6 +76,36 @@
               fill="currentColor" stroke="none"/>
       </svg>`,
 
+    /* Instagram */
+    instagram: `
+      <svg viewBox="0 0 64 64" fill="none" stroke="currentColor"
+           stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7" y="7" width="50" height="50" rx="15"/>
+        <circle cx="32" cy="32" r="12.5"/>
+        <circle cx="46.6" cy="17.4" r="2.8" fill="currentColor" stroke="none"/>
+      </svg>`,
+
+    /* Avioncito: mensaje directo */
+    avion: `
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z"/>
+      </svg>`,
+
+    /* Bolsa: comprá en la web */
+    bolsa: `
+      <svg viewBox="0 0 58 62" fill="none" stroke="currentColor"
+           stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="6" y="18" width="46" height="40" rx="6"/>
+        <path d="M19.5 24.5V16a9.5 9.5 0 0 1 19 0v8.5"/>
+      </svg>`,
+
+    /* Tilde para las listas de beneficios */
+    tilde: `
+      <svg viewBox="0 0 28 28" fill="none" stroke="currentColor"
+           stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 14.5 11.5 19.5 21.5 8.5"/>
+      </svg>`,
+
     /* Anillo dibujado a mano para las portadas de destacadas */
     anillo: `
       <svg viewBox="0 0 200 200" fill="none" stroke="currentColor"

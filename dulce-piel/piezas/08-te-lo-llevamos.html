@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<title>Dulce Piel — Te lo llevamos (feed)</title>
+<link rel="stylesheet" href="../marca.css">
+<style>
+  .pieza { background: var(--dp-crema-tibia); color: var(--dp-cacao); }
+  .papel {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(50% 40% at 6% 4%,   rgba(232,203,186,.55), transparent 70%),
+      radial-gradient(48% 42% at 96% 96%, rgba(217,166,149,.42), transparent 72%),
+      radial-gradient(40% 34% at 92% 10%, rgba(167,179,162,.20), transparent 74%),
+      linear-gradient(150deg, #FDF8F3 0%, #F8EDE4 54%, #F3E3D7 100%);
+  }
+  .botanica { position: absolute; color: var(--dp-salvia); opacity: .48; }
+  .botanica--rosa { color: var(--dp-rosa-suave); opacity: .44; }
+
+  .contenido {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center;
+    padding: 74px 76px 56px; text-align: center;
+  }
+  .logo-texto { font-size: 46px; }
+  .adorno { display: flex; align-items: center; gap: 16px; margin-top: 16px; }
+  .adorno i { display: block; width: 118px; height: 1px; background: rgba(156,95,81,.45); }
+  .adorno b { display: block; width: 9px; height: 9px; background: var(--dp-dorado);
+              transform: rotate(45deg); }
+
+  .antetitulo { margin-top: 30px; font-size: 33px; font-weight: 500;
+                letter-spacing: .3em; text-indent: .3em; text-transform: uppercase; }
+  .titulo     { margin-top: 6px; font-family: var(--dp-font-display); font-weight: 700;
+                font-style: italic; font-size: 96px; line-height: 1.02;
+                text-transform: uppercase; }
+  .bajada     { margin-top: 2px; font-family: var(--dp-font-display); font-weight: 500;
+                font-size: 58px; color: rgba(46,30,25,.66); }
+
+  .filas { margin-top: 52px; width: 100%; display: flex; flex-direction: column; gap: 44px; }
+  .fila  { display: flex; align-items: center; gap: 30px; text-align: left; }
+  .fila .ico-circulo {
+    flex: none; width: 108px; height: 108px; border-radius: 50%;
+    background: rgba(232,203,186,.55); color: var(--dp-cacao);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fila .ico-circulo i { display: block; }
+  .fila .texto { flex: 1; min-width: 0; }
+  .fila .rotulo { font-size: 40px; font-weight: 700; letter-spacing: .03em;
+                  text-transform: uppercase; line-height: 1.15; }
+  .fila .apoyo  { margin-top: 4px; font-size: 32px; font-weight: 300; color: rgba(46,30,25,.66); }
+
+  .pildora-web {
+    margin-top: 10px; height: 76px; padding: 0 30px; gap: 22px; justify-content: flex-start;
+    background: var(--dp-cacao); color: var(--dp-crema-tibia);
+    box-shadow: 0 14px 30px rgba(46,30,25,.20);
+  }
+  .pildora-web .globo { width: 36px; height: 36px; color: var(--dp-nude); flex: none; }
+  .pildora-web .url   { font-size: 36px; font-weight: 500; letter-spacing: .01em; }
+
+  .cierre { margin-top: auto; display: flex; flex-direction: column; align-items: center; }
+  .cierre .adorno { margin-bottom: 22px; }
+  .remate { font-size: 32px; font-weight: 600; letter-spacing: .26em; text-indent: .26em;
+            text-transform: uppercase; }
+</style>
+
+<body>
+<div class="dp-lienzo dp-lienzo--feed pieza">
+  <div class="papel"></div>
+
+  <svg class="botanica" style="left:-84px;top:-66px;width:380px;height:380px" viewBox="0 0 200 200"
+       fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M12 6C46 34 74 74 92 122"/>
+    <ellipse cx="34" cy="20" rx="19" ry="12" transform="rotate(-24 34 20)"/>
+    <ellipse cx="26" cy="46" rx="18" ry="11.5" transform="rotate(18 26 46)"/>
+    <ellipse cx="56" cy="44" rx="18" ry="11.5" transform="rotate(-40 56 44)"/>
+    <ellipse cx="48" cy="74" rx="17" ry="11" transform="rotate(14 48 74)"/>
+    <ellipse cx="78" cy="76" rx="17" ry="11" transform="rotate(-46 78 76)"/>
+  </svg>
+  <svg class="botanica botanica--rosa" style="right:-76px;bottom:-62px;width:360px;height:360px"
+       viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+    <path d="M188 194c-34-28-62-68-80-116"/>
+    <ellipse cx="166" cy="180" rx="19" ry="12" transform="rotate(-24 166 180)"/>
+    <ellipse cx="174" cy="154" rx="18" ry="11.5" transform="rotate(18 174 154)"/>
+    <ellipse cx="144" cy="156" rx="18" ry="11.5" transform="rotate(-40 144 156)"/>
+    <ellipse cx="152" cy="126" rx="17" ry="11" transform="rotate(14 152 126)"/>
+    <ellipse cx="122" cy="124" rx="17" ry="11" transform="rotate(-46 122 124)"/>
+  </svg>
+
+  <div class="dp-grano" style="opacity:.10"></div>
+
+  <div class="contenido">
+    <div class="dp-marca logo-texto">Dulce Piel</div>
+    <div class="adorno"><i></i><b></b><i></i></div>
+
+    <div class="antetitulo">Tu compra, donde estés</div>
+    <h1 class="titulo">Te lo llevamos</h1>
+    <div class="bajada">a todo el país</div>
+
+    <div class="filas">
+      <div class="fila">
+        <div class="ico-circulo"><i data-dp="camion" style="width:56px;height:36px"></i></div>
+        <div class="texto">
+          <div class="rotulo">Envíos rápidos</div>
+          <div class="apoyo">por DAC y Correo, 24 a 48 hs</div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="ico-circulo"><i data-dp="tarjeta" style="width:52px;height:37px"></i></div>
+        <div class="texto">
+          <div class="rotulo">Pagás como querés</div>
+          <div class="apoyo">transferencia, Mercado Pago o red</div>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="ico-circulo"><i data-dp="bolsa" style="width:44px;height:47px"></i></div>
+        <div class="texto">
+          <div class="rotulo">Comprá en la web</div>
+          <div class="dp-pildora pildora-web">
+            <i class="globo" data-dp="globoSimple"></i>
+            <span class="url">dulcepieluruguay.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cierre">
+      <div class="adorno"><i></i><b></b><i></i></div>
+      <div class="remate">Rápido, fácil y seguro</div>
+    </div>
+  </div>
+</div>
+<script src="../marca.js"></script>
+</body>
+</html>

@@ -17,3 +17,6 @@ render 02-compra-en-la-web.html        1080 1080
 render 03-destacada-envios.html        1080 1920
 render 04-destacada-web.html           1080 1920
 render 05-envios-a-todo-el-pais.html   1080 1920
+render 06-destacada-pagos.html         1080 1920
+render 07-compra-por-mensaje.html      1080 1080
+render 08-te-lo-llevamos.html          1080 1080

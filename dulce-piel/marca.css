@@ -24,6 +24,7 @@
   --dp-font-marca:   "Cormorant Garamond", "Times New Roman", serif; /* logotipo */
   --dp-font-display: "Playfair Display", Georgia, serif;             /* títulos */
   --dp-font-texto:   "Poppins", "Helvetica Neue", Arial, sans-serif; /* lectura */
+  --dp-font-firma:   "Parisienne", "Brush Script MT", cursive;       /* remates */
 
   /* --- Rasgos del logotipo --------------------------------------------- */
   --dp-marca-tracking: 0.42em;

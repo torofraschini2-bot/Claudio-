@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<title>Dulce Piel — Destacada Medios de pago</title>
+<link rel="stylesheet" href="../marca.css">
+<style>
+  .pieza { background: var(--dp-cacao-hondo); }
+  .fondo {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(58% 32% at 50% 50%, rgba(156,95,81,.26), transparent 68%),
+      radial-gradient(70% 40% at 50% 100%, rgba(85,51,44,.30), transparent 72%),
+      var(--dp-cacao-hondo);
+  }
+  .centro {
+    position: absolute; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .medallon { position: relative; width: 640px; height: 640px;
+              display: flex; align-items: center; justify-content: center; }
+  .disco {
+    position: absolute; width: 560px; height: 560px; border-radius: 50%;
+    background: radial-gradient(72% 72% at 34% 26%, #A96A59, var(--dp-rosa) 62%, #7E4A3E 100%);
+    box-shadow: 0 26px 70px rgba(0,0,0,.45);
+  }
+  .anillo { position: absolute; width: 626px; height: 626px; color: var(--dp-dorado);
+            transform: translate(6px, -4px); }
+  .icono  { position: relative; color: var(--dp-crema); width: 236px;height:167px; }
+</style>
+
+<body>
+<div class="dp-lienzo dp-lienzo--destacada pieza">
+  <div class="fondo"></div>
+  <div class="dp-grano" style="opacity:.10"></div>
+  <div class="centro">
+    <div class="medallon">
+      <div class="disco"></div>
+      <i class="anillo" data-dp="anillo"></i>
+      <i class="icono" data-dp="tarjeta"></i>
+    </div>
+  </div>
+</div>
+<script src="../marca.js"></script>
+</body>
+</html>
