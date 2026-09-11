@@ -14,14 +14,14 @@ precios de venta nuevos.
 
 | Producto | Costo | Precio | Margen $ | Margen % |
 |---|---|---|---|---|
-| Yerbera de Cuero de Chancho | $320 | $1.490 | $1.170 | **78,5%** |
+| Yerbera de Cuero de Chancho | $320 | $990 | $670 | **67,7%** |
 | Mate Ranchero | $830 | $2.390 | $1.560 | **65,3%** |
 | Bombilla de Alpaca | $380 | $890 | $510 | **57,3%** |
 | Kit Matero Ranchero | $1.530 | $2.990 | $1.460 | **48,8%** |
 | Bombacha de Campo (pack de 3) | $1.983 | $3.490 | $1.507 | **43,2%** |
 | Boina de Hilo Pesada | sin cargar | $1.890 | — | — |
 
-Margen bruto promedio ponderado: **55,2%** sobre los 5 productos con costo
+Margen bruto promedio ponderado: **53,1%** sobre los 5 productos con costo
 conocido.
 
 ### Qué cambió respecto del informe original
@@ -31,18 +31,19 @@ yerbera $390 → $320, bombacha pack de 3 sin cargar → $1.983 ($661 por unidad
 El kit se recalculó solo como la suma de sus tres piezas: $1.760 → $1.530.
 
 **Precios de venta** (segunda actualización): kit $4.990 → $2.990,
-bombilla $1.590 → $890, boina $2.490 → $1.890, mate $2.490 → $2.390. La yerbera
-y la bombacha no se tocaron.
+bombilla $1.590 → $890, boina $2.490 → $1.890, yerbera $1.490 → $990,
+mate $2.490 → $2.390. La bombacha es la única que no se tocó.
 
 ### Pendientes principales
 
 - **Ni los costos ni los precios nuevos están cargados en Shopify.** Este informe
   los aplica, pero los reportes de Shopify siguen mostrando los valores viejos.
 - **El Kit Matero Ranchero deja menos que el mate solo** ($1.460 contra $1.560),
-  y regala $1.780 contra sus tres piezas sueltas.
-- **Los packs de 2 y 3 quedaron desfasados.** Están armados como precio total
-  fijo ($4.290 y $5.190) calculado sobre $2.490. Con la boina a $1.890, el pack
-  de 2 cobra $510 más que dos boinas sueltas.
+  y regala $1.280 contra sus tres piezas sueltas.
+- **Tres packs quedaron dados vuelta: cobran más que comprar suelto.** Están
+  armados como precio total fijo calculado sobre los precios viejos. Yerbera
+  pack de 2 (+$570), yerbera pack de 3 (+$120) y boina pack de 2 (+$510). Los
+  del mate siguen siendo descuento real, pero se achicaron.
 - **La boina sigue sin costo cargado**: es el único producto del que no se puede
   calcular el margen.
 
