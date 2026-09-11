@@ -67,7 +67,7 @@
   }
 
   /* ---------- portada ---------- */
-  .portada{ padding-top:4mm; }
+  .portada{ padding-top:2mm; }
   .portada h1{
     font-family:var(--rd-font-marca); font-weight:700;
     text-transform:uppercase; letter-spacing:.14em;
@@ -79,10 +79,10 @@
     text-transform:uppercase; letter-spacing:.22em;
     font-size:9pt; color:var(--neutro); margin:0 0 3mm;
   }
-  .portada .fecha{ font-size:8.5pt; color:var(--tinta-sec); margin:0 0 7mm; }
+  .portada .fecha{ font-size:8.5pt; color:var(--tinta-sec); margin:0 0 5mm; }
 
   /* ---------- fichas de titular ---------- */
-  .kpis{ display:flex; gap:4mm; margin:0 0 6mm; }
+  .kpis{ display:flex; gap:4mm; margin:0 0 5mm; }
   .kpi{
     flex:1; border:.5pt solid var(--linea); border-top:2pt solid var(--rd-azul-marino);
     padding:4mm 4mm 4.5mm; background:var(--crema);
@@ -200,7 +200,7 @@
   <div class="portada">
     <p class="bajada">Informe interno</p>
     <h1>Costos y precios<br>de venta</h1>
-    <p class="fecha">11 de septiembre de 2026 · costos actualizados · ranchodobleuruguay.com</p>
+    <p class="fecha">11 de septiembre de 2026 · costos y precios actualizados · ranchodobleuruguay.com</p>
   </div>
 
   <div class="kpis">
@@ -208,89 +208,88 @@
       <span class="n">6</span>
       <span class="t">productos publicados</span>
     </div>
-    <div class="kpi alta">
-      <span class="n">5 de 6</span>
-      <span class="t">con costo conocido<br>(antes eran 4)</span>
-    </div>
-    <div class="kpi alta">
-      <span class="n">64,1%</span>
-      <span class="t">margen bruto promedio<br>ponderado</span>
+    <div class="kpi baja">
+      <span class="n">55,2%</span>
+      <span class="t">margen bruto promedio<br>ponderado (antes 64,1%)</span>
     </div>
     <div class="kpi baja">
-      <span class="n">43,2%</span>
-      <span class="t">margen más bajo<br>bombacha de campo</span>
+      <span class="n">2 de 6</span>
+      <span class="t">por debajo del 50%<br>de margen</span>
+    </div>
+    <div class="kpi baja">
+      <span class="n">48,8%</span>
+      <span class="t">kit matero ranchero<br>antes 69,3%</span>
     </div>
   </div>
 
   <h2>Qué se actualizó</h2>
-  <p>Este informe toma la estructura del informe anterior y le aplica los costos nuevos. Los precios de venta
-  no se tocaron: siguen siendo los que están cargados en Shopify. Todo lo que cambió son los costos, y con
-  ellos los márgenes.</p>
+  <p>Sobre el informe anterior se aplicaron primero los costos nuevos y ahora los precios de venta nuevos.
+  Cuatro productos bajaron de precio; la yerbera y la bombacha quedaron igual. Los costos son los de la
+  actualización anterior y no se tocaron.</p>
 
   <table>
     <thead>
       <tr>
         <th>Producto</th>
-        <th>Costo anterior</th>
-        <th>Costo nuevo</th>
-        <th>Δ costo</th>
+        <th>Costo</th>
+        <th>Precio antes</th>
+        <th>Precio ahora</th>
+        <th>Δ precio</th>
         <th>Margen antes</th>
         <th>Margen ahora</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Mate Ranchero</td>
-        <td class="num">$890</td><td class="num">$830</td>
-        <td class="num baja-costo">−$60 · −6,7%</td>
-        <td class="num na">64,3%</td><td class="num sube-margen">66,7%</td>
+      <tr class="destacada">
+        <td>Kit Matero Ranchero</td>
+        <td class="num">$1.530</td><td class="num">$4.990</td><td class="num">$2.990</td>
+        <td class="num neg">−$2.000 · −40,1%</td>
+        <td class="num na">69,3%</td><td class="num neg">48,8%</td>
       </tr>
       <tr>
         <td>Bombilla de Alpaca</td>
-        <td class="num">$480</td><td class="num">$380</td>
-        <td class="num baja-costo">−$100 · −20,8%</td>
-        <td class="num na">69,8%</td><td class="num sube-margen">76,1%</td>
-      </tr>
-      <tr>
-        <td>Yerbera de Cuero de Chancho</td>
-        <td class="num">$390</td><td class="num">$320</td>
-        <td class="num baja-costo">−$70 · −17,9%</td>
-        <td class="num na">73,8%</td><td class="num sube-margen">78,5%</td>
-      </tr>
-      <tr>
-        <td>Bombacha de Campo — pack de 3</td>
-        <td class="num na">sin cargar</td><td class="num">$1.983</td>
-        <td class="num na">—</td>
-        <td class="num na">—</td><td class="num neg">43,2%</td>
-      </tr>
-      <tr class="destacada">
-        <td>Kit Matero Ranchero <span class="nota">(recalculado)</span></td>
-        <td class="num">$1.760</td><td class="num">$1.530</td>
-        <td class="num baja-costo">−$230 · −13,1%</td>
-        <td class="num na">64,7%</td><td class="num sube-margen">69,3%</td>
+        <td class="num">$380</td><td class="num">$1.590</td><td class="num">$890</td>
+        <td class="num neg">−$700 · −44,0%</td>
+        <td class="num na">76,1%</td><td class="num">57,3%</td>
       </tr>
       <tr>
         <td>Boina de Hilo Pesada — Línea Euskadi</td>
-        <td class="num na">sin cargar</td><td class="num na">sin cargar</td>
-        <td class="num na">—</td>
+        <td class="num na">sin cargar</td><td class="num">$2.490</td><td class="num">$1.890</td>
+        <td class="num neg">−$600 · −24,1%</td>
         <td class="num na">—</td><td class="num na">—</td>
+      </tr>
+      <tr>
+        <td>Mate Ranchero</td>
+        <td class="num">$830</td><td class="num">$2.490</td><td class="num">$2.390</td>
+        <td class="num neg">−$100 · −4,0%</td>
+        <td class="num na">66,7%</td><td class="num">65,3%</td>
+      </tr>
+      <tr>
+        <td>Yerbera de Cuero de Chancho</td>
+        <td class="num">$320</td><td class="num">$1.490</td><td class="num">$1.490</td>
+        <td class="num na">sin cambio</td>
+        <td class="num na">78,5%</td><td class="num pos">78,5%</td>
+      </tr>
+      <tr>
+        <td>Bombacha de Campo — pack de 3</td>
+        <td class="num">$1.983</td><td class="num">$3.490</td><td class="num">$3.490</td>
+        <td class="num na">sin cambio</td>
+        <td class="num na">43,2%</td><td class="num neg">43,2%</td>
       </tr>
     </tbody>
   </table>
 
-  <p class="nota"><strong>El costo del kit no es un dato nuevo, es una consecuencia.</strong> El kit son tres piezas
-  sueltas, así que su costo se recalculó solo: mate $830 + yerbera $320 + bombilla $380 = <strong>$1.530</strong>.</p>
-
-  <p class="nota"><strong>Los $1.983 de la bombacha se leen como el costo del pack de tres</strong>, que es la
-  unidad en que se vende: el precio de lista de $3.490 cubre tres prendas. Eso deja el costo por bombacha en
-  <strong>$661</strong> ($1.983 ÷ 3).</p>
-
-  <h2 style="margin-top:4mm">Lo primero que hay que mirar</h2>
-  <p>Los tres costos que bajaron empujan el margen para arriba: sobre los mismos cuatro productos que el informe
-  anterior podía medir, el promedio ponderado pasa de <strong>66,7% a 71,0%</strong>.</p>
-  <p>Pero ahora la bombacha tiene costo, y es la noticia del informe: <strong>deja 43,2%</strong>, muy por debajo
-  de todo el resto de la tienda, que se mueve entre 66% y 79%. Es además el producto que más se vendió. Al
-  entrar al promedio, lo baja de 71,0% a <strong>64,1%</strong>.</p>
+  <h2 style="margin-top:3mm">Lo primero que hay que mirar</h2>
+  <p>Las bajas de precio son mucho más grandes que las bajas de costo de la vuelta anterior, así que el
+  movimiento neto es hacia abajo: <strong>el margen promedio ponderado cae de 64,1% a 55,2%</strong>.</p>
+  <p><strong>El Kit Matero Ranchero es el caso serio.</strong> A $2.990 deja 48,8%, y como las tres piezas
+  sueltas ahora suman $4.770, el kit regala $1.780 — más de un tercio del precio. En plata, vender un kit deja
+  <strong>$1.460 y vender solamente el mate deja $1.560</strong>: el kit da dos productos más y termina dejando
+  $100 menos. Está en la página 4.</p>
+  <p><strong>Los packs de 2 y 3 no siguieron a los precios nuevos.</strong> Están armados como precio total fijo
+  ($4.290 el de 2, $5.190 el de 3) y se calcularon cuando el mate y la boina valían $2.490. Con la boina a
+  $1.890, <strong>el pack de 2 a $4.290 sale $510 más caro que comprar dos boinas sueltas</strong>. Está en la
+  página 2.</p>
   <p class="nota">Margen bruto % = (precio − costo) ÷ precio. Markup = precio ÷ costo. El promedio ponderado se
   calcula sobre los 5 productos con costo conocido, ponderando por su precio de lista. Los importes son pesos
   uruguayos y son los precios tal como se cobran en el checkout: los seis productos están marcados
@@ -314,16 +313,16 @@
     <div class="cifras">
       <div class="c"><span class="et">Precio de lista</span><span class="v">$3.490</span><span class="sub">por 3 bombachas</span></div>
       <div class="c"><span class="et">Precio por unidad</span><span class="v">$1.163</span><span class="sub">$3.490 ÷ 3</span></div>
-      <div class="c nuevo"><span class="et">Costo del pack</span><span class="v">$1.983</span><span class="sub">$661 por unidad</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto</span><span class="v">$1.507</span><span class="sub">$502 por unidad</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto %</span><span class="v rojo">43,2%</span></div>
-      <div class="c nuevo"><span class="et">Markup</span><span class="v">1,76<span class="x">x</span></span></div>
+      <div class="c"><span class="et">Costo del pack</span><span class="v">$1.983</span><span class="sub">$661 por unidad</span></div>
+      <div class="c"><span class="et">Margen bruto</span><span class="v">$1.507</span><span class="sub">$502 por unidad</span></div>
+      <div class="c"><span class="et">Margen bruto %</span><span class="v rojo">43,2%</span></div>
+      <div class="c"><span class="et">Markup</span><span class="v">1,76<span class="x">x</span></span></div>
       <div class="c"><span class="et">Stock total</span><span class="v rojo">−24</span></div>
     </div>
-    <p class="nota"><strong>Es el margen más bajo de la tienda por lejos.</strong> El segundo peor es el Mate
-    Ranchero con 66,7%: hay 23 puntos de diferencia. El precio tachado de $5.070 (3 × $1.690) sugiere que el
-    precio "real" pensado era $1.690 la unidad; a ese precio el margen sería 60,9%. Hoy se vende a $1.163 la
-    unidad y deja $502.</p>
+    <p class="nota">No cambió de precio ni de costo. <strong>Sigue siendo el margen más bajo de la tienda</strong>,
+    aunque ahora el kit le quedó cerca (48,8%). El precio tachado de $5.070 (3 × $1.690) sugiere que el precio
+    "real" pensado era $1.690 la unidad; a ese precio el margen sería 60,9%. Hoy se vende a $1.163 la unidad y
+    deja $502.</p>
 
     <table class="stock">
       <thead>
@@ -346,7 +345,7 @@
     <h3>Boina de Hilo Pesada — Línea Euskadi</h3>
     <div class="cifras">
       <div class="c"><span class="et">Costo</span><span class="v gris">sin cargar</span></div>
-      <div class="c"><span class="et">Precio de venta</span><span class="v">$2.490</span></div>
+      <div class="c nuevo"><span class="et">Precio de venta</span><span class="v">$1.890</span><span class="sub">antes $2.490</span></div>
       <div class="c"><span class="et">Margen bruto</span><span class="v gris">—</span></div>
       <div class="c"><span class="et">Margen bruto %</span><span class="v gris">—</span></div>
       <div class="c"><span class="et">Markup</span><span class="v gris">—</span></div>
@@ -355,13 +354,16 @@
     <table class="compacta">
       <thead><tr><th>Si lleva</th><th>Unidades</th><th>Sin descuento</th><th>Descuento</th><th>Paga</th><th>Por unidad</th><th>Margen $</th><th>Margen %</th></tr></thead>
       <tbody>
-        <tr><td>1</td><td class="num">1</td><td class="num">$2.490</td><td class="na">—</td><td class="num">$2.490</td><td class="num">$2.490</td><td class="na">—</td><td class="na">—</td></tr>
-        <tr><td>2</td><td class="num">2</td><td class="num">$4.980</td><td class="num">$690</td><td class="num">$4.290</td><td class="num">$2.145</td><td class="na">—</td><td class="na">—</td></tr>
-        <tr><td>3</td><td class="num">3</td><td class="num">$7.470</td><td class="num">$2.280</td><td class="num">$5.190</td><td class="num">$1.730</td><td class="na">—</td><td class="na">—</td></tr>
+        <tr><td>1</td><td class="num">1</td><td class="num">$1.890</td><td class="na">—</td><td class="num">$1.890</td><td class="num">$1.890</td><td class="na">—</td><td class="na">—</td></tr>
+        <tr><td>2</td><td class="num">2</td><td class="num">$3.780</td><td class="num neg">−$510</td><td class="num neg">$4.290</td><td class="num neg">$2.145</td><td class="na">—</td><td class="na">—</td></tr>
+        <tr><td>3</td><td class="num">3</td><td class="num">$5.670</td><td class="num">$480</td><td class="num">$5.190</td><td class="num">$1.730</td><td class="na">—</td><td class="na">—</td></tr>
       </tbody>
     </table>
-    <p class="nota">Es el único producto que sigue sin costo. Sin ese dato no se puede calcular ni su margen ni el
-    de sus packs de 2 y 3.</p>
+    <p class="nota"><strong>El pack de 2 quedó roto.</strong> Está configurado como precio total fijo de $4.290,
+    calculado cuando la boina valía $2.490. Con el precio nuevo, dos boinas sueltas salen $3.780: el pack cobra
+    <strong>$510 de más</strong>, o sea que es un recargo disfrazado de descuento. El pack de 3 sigue siendo un
+    descuento real, pero pasó de $2.280 a $480. Los dos hay que rearmarlos o darlos de baja.</p>
+    <p class="nota">Sigue sin costo cargado. Es el único de los seis del que no se puede calcular el margen.</p>
   </div>
 
   <div class="pie"><span>Rancho Doble · Costos y precios</span><span>Pág. 2</span></div>
@@ -378,11 +380,11 @@
   <div class="prod">
     <h3>Yerbera de Cuero de Chancho</h3>
     <div class="cifras">
-      <div class="c nuevo"><span class="et">Costo</span><span class="v">$320</span><span class="sub">antes $390</span></div>
-      <div class="c"><span class="et">Precio de venta</span><span class="v">$1.490</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto</span><span class="v">$1.170</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto %</span><span class="v verde">78,5%</span></div>
-      <div class="c nuevo"><span class="et">Markup</span><span class="v">4,66<span class="x">x</span></span></div>
+      <div class="c"><span class="et">Costo</span><span class="v">$320</span></div>
+      <div class="c"><span class="et">Precio de venta</span><span class="v">$1.490</span><span class="sub">sin cambio</span></div>
+      <div class="c"><span class="et">Margen bruto</span><span class="v">$1.170</span></div>
+      <div class="c"><span class="et">Margen bruto %</span><span class="v verde">78,5%</span></div>
+      <div class="c"><span class="et">Markup</span><span class="v">4,66<span class="x">x</span></span></div>
       <div class="c"><span class="et">Stock total</span><span class="v">5.000</span></div>
     </div>
     <table class="compacta">
@@ -403,37 +405,39 @@
         <tr><td>Marrón</td><td>YER-CUE-MAR</td><td class="num">$1.490</td><td class="num">$320</td><td class="num">$1.170</td><td class="num pos">78,5%</td><td class="num">1.000</td></tr>
       </tbody>
     </table>
-    <p class="nota">Con el costo nuevo pasa a ser <strong>el producto más rentable de la tienda</strong>. Incluso
-    el pack de 3, que es su escalón más agresivo, deja 68,9%: más que lo que dejaba una yerbera suelta antes.</p>
+    <p class="nota">Es el único producto que no se tocó ni de precio ni de costo, y quedó como
+    <strong>el más rentable de la tienda por lejos</strong>: 13 puntos por encima del segundo. Sus packs de 2 y 3
+    siguen cerrando bien porque su precio no se movió.</p>
   </div>
 
   <div class="prod">
     <h3>Mate Ranchero</h3>
     <div class="cifras">
-      <div class="c nuevo"><span class="et">Costo</span><span class="v">$830</span><span class="sub">antes $890</span></div>
-      <div class="c"><span class="et">Precio de venta</span><span class="v">$2.490</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto</span><span class="v">$1.660</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto %</span><span class="v verde">66,7%</span></div>
-      <div class="c nuevo"><span class="et">Markup</span><span class="v">3,00<span class="x">x</span></span></div>
+      <div class="c"><span class="et">Costo</span><span class="v">$830</span></div>
+      <div class="c nuevo"><span class="et">Precio de venta</span><span class="v">$2.390</span><span class="sub">antes $2.490</span></div>
+      <div class="c nuevo"><span class="et">Margen bruto</span><span class="v">$1.560</span></div>
+      <div class="c nuevo"><span class="et">Margen bruto %</span><span class="v verde">65,3%</span><span class="sub">antes 66,7%</span></div>
+      <div class="c nuevo"><span class="et">Markup</span><span class="v">2,88<span class="x">x</span></span></div>
       <div class="c"><span class="et">Stock total</span><span class="v">1.000</span></div>
     </div>
     <table class="compacta">
       <thead><tr><th>Si lleva</th><th>Unidades</th><th>Sin descuento</th><th>Descuento</th><th>Paga</th><th>Por unidad</th><th>Margen $</th><th>Margen %</th></tr></thead>
       <tbody>
-        <tr><td>1</td><td class="num">1</td><td class="num">$2.490</td><td class="na">—</td><td class="num">$2.490</td><td class="num">$2.490</td><td class="num">$1.660</td><td class="num pos">66,7%</td></tr>
-        <tr><td>2</td><td class="num">2</td><td class="num">$4.980</td><td class="num">$690</td><td class="num">$4.290</td><td class="num">$2.145</td><td class="num">$2.630</td><td class="num pos">61,3%</td></tr>
-        <tr><td>3</td><td class="num">3</td><td class="num">$7.470</td><td class="num">$2.280</td><td class="num">$5.190</td><td class="num">$1.730</td><td class="num">$2.700</td><td class="num pos">52,0%</td></tr>
+        <tr><td>1</td><td class="num">1</td><td class="num">$2.390</td><td class="na">—</td><td class="num">$2.390</td><td class="num">$2.390</td><td class="num">$1.560</td><td class="num pos">65,3%</td></tr>
+        <tr><td>2</td><td class="num">2</td><td class="num">$4.780</td><td class="num">$490</td><td class="num">$4.290</td><td class="num">$2.145</td><td class="num">$2.630</td><td class="num pos">61,3%</td></tr>
+        <tr><td>3</td><td class="num">3</td><td class="num">$7.170</td><td class="num">$1.980</td><td class="num">$5.190</td><td class="num">$1.730</td><td class="num">$2.700</td><td class="num pos">52,0%</td></tr>
       </tbody>
     </table>
     <table class="compacta">
       <thead><tr><th>Variante</th><th>SKU</th><th>Precio</th><th>Costo</th><th>Margen $</th><th>Margen %</th><th>Stock</th></tr></thead>
       <tbody>
-        <tr><td>Única</td><td>MAT-OVE-01</td><td class="num">$2.490</td><td class="num">$830</td><td class="num">$1.660</td><td class="num pos">66,7%</td><td class="num">1.000</td></tr>
+        <tr><td>Única</td><td>MAT-OVE-01</td><td class="num">$2.390</td><td class="num">$830</td><td class="num">$1.560</td><td class="num pos">65,3%</td><td class="num">1.000</td></tr>
       </tbody>
     </table>
-    <p class="nota">El pack de 3 era el único escalón de toda la tienda por debajo del 50% (48,6%). Con el costo
-    nuevo <strong>sube a 52,0% y deja de estar en rojo</strong>. Sigue siendo el escalón más flaco entre los
-    productos con costo cargado, después de la bombacha.</p>
+    <p class="nota">Bajó apenas $100, así que el margen casi no se movió. Lo que sí cambió es el valor de sus
+    packs: como están fijados en $4.290 y $5.190, el descuento del pack de 2 se achicó de $690 a $490 y el del
+    pack de 3 de $2.280 a $1.980. <strong>Pasó a ser el producto más rentable después de la yerbera</strong>, no
+    porque haya mejorado sino porque los otros bajaron más.</p>
   </div>
 
   <div class="pie"><span>Rancho Doble · Costos y precios</span><span>Pág. 3</span></div>
@@ -450,58 +454,60 @@
   <div class="prod">
     <h3>Kit Matero Ranchero</h3>
     <div class="cifras">
-      <div class="c nuevo"><span class="et">Costo</span><span class="v">$1.530</span><span class="sub">antes $1.760</span></div>
-      <div class="c"><span class="et">Precio de venta</span><span class="v">$4.990</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto</span><span class="v">$3.460</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto %</span><span class="v verde">69,3%</span></div>
-      <div class="c nuevo"><span class="et">Markup</span><span class="v">3,26<span class="x">x</span></span></div>
+      <div class="c"><span class="et">Costo</span><span class="v">$1.530</span><span class="sub">las 3 piezas</span></div>
+      <div class="c nuevo"><span class="et">Precio de venta</span><span class="v">$2.990</span><span class="sub">antes $4.990</span></div>
+      <div class="c nuevo"><span class="et">Margen bruto</span><span class="v">$1.460</span><span class="sub">antes $3.460</span></div>
+      <div class="c nuevo"><span class="et">Margen bruto %</span><span class="v rojo">48,8%</span><span class="sub">antes 69,3%</span></div>
+      <div class="c nuevo"><span class="et">Markup</span><span class="v">1,95<span class="x">x</span></span></div>
       <div class="c"><span class="et">Stock total</span><span class="v">1.000</span></div>
     </div>
     <table class="compacta">
       <thead><tr><th>Variante</th><th>SKU</th><th>Precio</th><th>Costo</th><th>Margen $</th><th>Margen %</th><th>Stock</th></tr></thead>
       <tbody>
-        <tr><td>Única</td><td>KIT-MAT-01</td><td class="num">$4.990</td><td class="num">$1.530</td><td class="num">$3.460</td><td class="num pos">69,3%</td><td class="num">1.000</td></tr>
+        <tr><td>Única</td><td>KIT-MAT-01</td><td class="num">$2.990</td><td class="num">$1.530</td><td class="num">$1.460</td><td class="num neg">48,8%</td><td class="num">1.000</td></tr>
       </tbody>
     </table>
-    <p class="nota">El costo de $1.530 es exactamente la suma de las tres piezas con los costos nuevos:
-    mate $830 + yerbera $320 + bombilla $380. Comprando las tres sueltas el cliente paga $5.570, o sea que el kit
-    le ahorra $580 — eso no cambió, porque los precios de venta son los mismos. Lo que cambió es que ese
-    descuento ahora sale de un margen de 69,3% en vez de 64,7%: <strong>el kit pasó a ser más rentable que el
-    mate suelto</strong>.</p>
+
+    <p class="nota"><strong>Es el producto que más cambió y el que hay que revisar.</strong> El costo de $1.530 es
+    la suma de sus tres piezas (mate $830 + yerbera $320 + bombilla $380) y no se movió; el precio bajó $2.000.</p>
+
+    <table class="compacta">
+      <thead><tr><th>El kit contra sus piezas</th><th>Mate</th><th>Yerbera</th><th>Bombilla</th><th>Las 3 sueltas</th><th>El kit</th><th>Diferencia</th></tr></thead>
+      <tbody>
+        <tr><td>Precio</td><td class="num">$2.390</td><td class="num">$1.490</td><td class="num">$890</td><td class="num">$4.770</td><td class="num">$2.990</td><td class="num neg">−$1.780</td></tr>
+        <tr><td>Costo</td><td class="num">$830</td><td class="num">$320</td><td class="num">$380</td><td class="num">$1.530</td><td class="num">$1.530</td><td class="num na">igual</td></tr>
+        <tr class="destacada"><td>Margen bruto</td><td class="num">$1.560</td><td class="num">$1.170</td><td class="num">$510</td><td class="num">$3.240</td><td class="num">$1.460</td><td class="num neg">−$1.780</td></tr>
+        <tr><td>Margen bruto %</td><td class="num">65,3%</td><td class="num">78,5%</td><td class="num">57,3%</td><td class="num pos">67,9%</td><td class="num neg">48,8%</td><td class="num neg">−19,1 pts</td></tr>
+      </tbody>
+    </table>
+
+    <p class="nota">Dos cosas para decidir. <strong>Una:</strong> el kit regala $1.780, que es el 37% del precio de
+    las tres piezas sueltas y equivale a entregar la yerbera y la bombilla casi sin cobrarlas.
+    <strong>Dos:</strong> vender un kit deja $1.460 y vender solamente el mate deja $1.560, así que
+    <strong>cada kit que sale en lugar de un mate suelto deja $100 menos y además se lleva dos productos de
+    stock</strong>. El kit solo conviene si trae clientes que de otro modo no compraban, no como upsell sobre el
+    mate.</p>
   </div>
 
   <div class="prod">
     <h3>Bombilla de Alpaca</h3>
     <div class="cifras">
-      <div class="c nuevo"><span class="et">Costo</span><span class="v">$380</span><span class="sub">antes $480</span></div>
-      <div class="c"><span class="et">Precio de venta</span><span class="v">$1.590</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto</span><span class="v">$1.210</span></div>
-      <div class="c nuevo"><span class="et">Margen bruto %</span><span class="v verde">76,1%</span></div>
-      <div class="c nuevo"><span class="et">Markup</span><span class="v">4,18<span class="x">x</span></span></div>
+      <div class="c"><span class="et">Costo</span><span class="v">$380</span></div>
+      <div class="c nuevo"><span class="et">Precio de venta</span><span class="v">$890</span><span class="sub">antes $1.590</span></div>
+      <div class="c nuevo"><span class="et">Margen bruto</span><span class="v">$510</span><span class="sub">antes $1.210</span></div>
+      <div class="c nuevo"><span class="et">Margen bruto %</span><span class="v">57,3%</span><span class="sub">antes 76,1%</span></div>
+      <div class="c nuevo"><span class="et">Markup</span><span class="v">2,34<span class="x">x</span></span></div>
       <div class="c"><span class="et">Stock total</span><span class="v">1.000</span></div>
     </div>
     <table class="compacta">
       <thead><tr><th>Variante</th><th>SKU</th><th>Precio</th><th>Costo</th><th>Margen $</th><th>Margen %</th><th>Stock</th></tr></thead>
       <tbody>
-        <tr><td>Única</td><td>BOM-ALP-01</td><td class="num">$1.590</td><td class="num">$380</td><td class="num">$1.210</td><td class="num pos">76,1%</td><td class="num">1.000</td></tr>
+        <tr><td>Única</td><td>BOM-ALP-01</td><td class="num">$890</td><td class="num">$380</td><td class="num">$510</td><td class="num">57,3%</td><td class="num">1.000</td></tr>
       </tbody>
     </table>
-    <p class="nota">Es la mayor baja de costo del lote: <strong>−20,8%</strong>. El margen sube 6,3 puntos y pasa
-    a ser el segundo mejor de la tienda.</p>
+    <p class="nota">Es la baja de precio más grande en porcentaje: <strong>−44,0%</strong>. Pasó de ser el segundo
+    producto más rentable a estar cuarto. En plata deja $510, que es menos de la mitad de lo que dejaba antes.</p>
   </div>
-
-  <h2 style="margin-top:9mm">Cómo quedó el promedio</h2>
-  <table>
-    <thead><tr><th>Cómo se mide</th><th>Productos</th><th>Suma de precios</th><th>Suma de márgenes</th><th>Promedio ponderado</th></tr></thead>
-    <tbody>
-      <tr><td>Informe anterior</td><td class="num">4</td><td class="num">$10.560</td><td class="num">$7.040</td><td class="num">66,7%</td></tr>
-      <tr><td>Mismos 4 productos, costos nuevos</td><td class="num">4</td><td class="num">$10.560</td><td class="num">$7.500</td><td class="num pos">71,0%</td></tr>
-      <tr class="destacada"><td>Los 5 con costo conocido (incluye bombacha)</td><td class="num">5</td><td class="num">$14.050</td><td class="num">$9.007</td><td class="num">64,1%</td></tr>
-    </tbody>
-  </table>
-  <p class="nota">La fila del medio y la de abajo miden cosas distintas: la del medio muestra cuánto mejoró la
-  rentabilidad por la baja de costos; la de abajo muestra dónde está parada la tienda de verdad, ahora que la
-  bombacha — el producto que más se vende — entra a la cuenta.</p>
 
   <div class="pie"><span>Rancho Doble · Costos y precios</span><span>Pág. 4</span></div>
 </section>
@@ -517,61 +523,71 @@
   <h2>Los 6 de un vistazo, ordenados por margen</h2>
   <table class="ranking">
     <thead>
-      <tr><th>#</th><th>Producto</th><th>Costo</th><th>Precio</th><th>Margen $</th><th>Margen %</th><th>Markup</th><th>Antes</th></tr>
+      <tr><th>#</th><th>Producto</th><th>Costo</th><th>Precio</th><th>Margen $</th><th>Margen %</th><th>Markup</th><th>Margen antes</th></tr>
     </thead>
     <tbody>
-      <tr><td>1</td><td>Yerbera de Cuero de Chancho</td><td class="num">$320</td><td class="num">$1.490</td><td class="num">$1.170</td><td class="num pos">78,5%</td><td class="num">4,66x</td><td class="num na">73,8%</td></tr>
-      <tr><td>2</td><td>Bombilla de Alpaca</td><td class="num">$380</td><td class="num">$1.590</td><td class="num">$1.210</td><td class="num pos">76,1%</td><td class="num">4,18x</td><td class="num na">69,8%</td></tr>
-      <tr><td>3</td><td>Kit Matero Ranchero</td><td class="num">$1.530</td><td class="num">$4.990</td><td class="num">$3.460</td><td class="num pos">69,3%</td><td class="num">3,26x</td><td class="num na">64,7%</td></tr>
-      <tr><td>4</td><td>Mate Ranchero</td><td class="num">$830</td><td class="num">$2.490</td><td class="num">$1.660</td><td class="num pos">66,7%</td><td class="num">3,00x</td><td class="num na">64,3%</td></tr>
-      <tr class="destacada"><td>5</td><td>Bombacha de Campo (3x2)</td><td class="num">$1.983</td><td class="num">$3.490</td><td class="num">$1.507</td><td class="num neg">43,2%</td><td class="num">1,76x</td><td class="num na">—</td></tr>
-      <tr><td class="na">—</td><td>Boina de Hilo Pesada — Línea Euskadi</td><td class="num na">sin cargar</td><td class="num">$2.490</td><td class="num na">—</td><td class="num na">—</td><td class="num na">—</td><td class="num na">—</td></tr>
+      <tr><td>1</td><td>Yerbera de Cuero de Chancho</td><td class="num">$320</td><td class="num">$1.490</td><td class="num">$1.170</td><td class="num pos">78,5%</td><td class="num">4,66<span class="x">x</span></td><td class="num na">78,5%</td></tr>
+      <tr><td>2</td><td>Mate Ranchero</td><td class="num">$830</td><td class="num">$2.390</td><td class="num">$1.560</td><td class="num pos">65,3%</td><td class="num">2,88<span class="x">x</span></td><td class="num na">66,7%</td></tr>
+      <tr><td>3</td><td>Bombilla de Alpaca</td><td class="num">$380</td><td class="num">$890</td><td class="num">$510</td><td class="num">57,3%</td><td class="num">2,34<span class="x">x</span></td><td class="num na">76,1%</td></tr>
+      <tr class="destacada"><td>4</td><td>Kit Matero Ranchero</td><td class="num">$1.530</td><td class="num">$2.990</td><td class="num">$1.460</td><td class="num neg">48,8%</td><td class="num">1,95<span class="x">x</span></td><td class="num na">69,3%</td></tr>
+      <tr class="destacada"><td>5</td><td>Bombacha de Campo (3x2)</td><td class="num">$1.983</td><td class="num">$3.490</td><td class="num">$1.507</td><td class="num neg">43,2%</td><td class="num">1,76<span class="x">x</span></td><td class="num na">43,2%</td></tr>
+      <tr><td class="na">—</td><td>Boina de Hilo Pesada — Línea Euskadi</td><td class="num na">sin cargar</td><td class="num">$1.890</td><td class="num na">—</td><td class="num na">—</td><td class="num na">—</td><td class="num na">—</td></tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead><tr><th>Cómo se mide el promedio</th><th>Productos</th><th>Suma de precios</th><th>Suma de márgenes</th><th>Promedio ponderado</th></tr></thead>
+    <tbody>
+      <tr><td>Informe original</td><td class="num">4</td><td class="num">$10.560</td><td class="num">$7.040</td><td class="num">66,7%</td></tr>
+      <tr><td>Con los costos nuevos, precios viejos</td><td class="num">5</td><td class="num">$14.050</td><td class="num">$9.007</td><td class="num">64,1%</td></tr>
+      <tr class="destacada"><td>Con los costos y los precios nuevos</td><td class="num">5</td><td class="num">$11.250</td><td class="num">$6.207</td><td class="num neg">55,2%</td></tr>
     </tbody>
   </table>
   <p class="nota">La bombacha se mide sobre su pack de 3, que es su unidad de venta: $3.490 de precio contra
   $1.983 de costo. Por unidad son $1.163 contra $661. La boina va al final porque sin costo no se le puede
   calcular el margen. Importes en pesos uruguayos, tal como se cobran en el checkout (sin IVA agregado).</p>
 
-  <h2 style="margin-top:8mm">Qué falta</h2>
+  <h2 style="margin-top:6mm">Qué falta</h2>
   <table class="texto">
     <thead><tr><th>Qué</th><th>Detalle</th></tr></thead>
     <tbody>
       <tr>
-        <td>Cargar los costos nuevos en Shopify</td>
-        <td>Este informe ya los aplica, pero Shopify sigue teniendo los viejos ($890 mate, $480 bombilla,
-        $390 yerbera, bombacha sin costo). Hasta que se carguen, los reportes de rentabilidad de Shopify van a
-        seguir mostrando los márgenes anteriores. La bombacha son 60 variantes a cargar.</td>
+        <td>Kit Matero Ranchero — 48,8%</td>
+        <td>Regala $1.780 contra las tres piezas sueltas y deja $100 menos que vender el mate solo. Hay que
+        decidir si el precio es correcto: a $3.990 el kit dejaría 61,7% y seguiría ahorrándole $780 al cliente.</td>
+      </tr>
+      <tr>
+        <td>Packs de 2 y 3 desfasados</td>
+        <td>Están configurados como precio total fijo ($4.290 y $5.190) calculado sobre $2.490. Con la boina a
+        $1.890 el pack de 2 cobra $510 de más que dos sueltas. Hay que rearmarlos sobre los precios nuevos o
+        darlos de baja.</td>
+      </tr>
+      <tr>
+        <td>Cargar costos y precios en Shopify</td>
+        <td>Este informe ya los aplica, pero Shopify todavía tiene los costos viejos ($890 mate, $480 bombilla,
+        $390 yerbera, bombacha sin costo). Los precios nuevos hay que confirmarlos también. La bombacha son 60
+        variantes a cargar.</td>
       </tr>
       <tr>
         <td>Bombacha de Campo — margen de 43,2%</td>
-        <td>Es el hallazgo principal. Es el producto que más se vendió y el que menos deja: 23 puntos por debajo
-        del siguiente. A $3.490 el pack deja $1.507; el precio tachado de $5.070 (3 × $1.690) daría 60,9%. Hay
-        que decidir si el 3x2 se sostiene a este precio o si era una promoción que quedó fija.</td>
+        <td>Sigue siendo el más bajo. Es el producto que más se vendió. A $3.490 el pack deja $1.507; el precio
+        tachado de $5.070 (3 × $1.690) daría 60,9%. Hay que decidir si el 3x2 se sostiene a este precio.</td>
       </tr>
       <tr>
         <td>Boina de Hilo Pesada — Línea Euskadi</td>
-        <td>Sigue sin costo cargado. Es el único de los seis del que no se puede calcular el margen, ni el de sus
-        packs de 2 y 3.</td>
+        <td>Sigue sin costo cargado. Es el único de los seis del que no se puede calcular el margen, y ahora
+        además bajó de precio a ciegas: no se sabe cuánto deja a $1.890.</td>
       </tr>
       <tr>
         <td>Bombacha de Campo — inventario</td>
-        <td>El inventario sigue en −24 unidades: se vendieron 24 bombachas más de las que había cargadas.
-        Shopify muestra el total del producto en 0, que no coincide con la suma de las variantes.</td>
-      </tr>
-      <tr>
-        <td>Descuentos vencidos de la bombacha</td>
-        <td>«Pack de 2 — $2.890» y «Pack de 3 — $3.490» figuran EXPIRADOS. Estaban armados para un precio
-        unitario de $1.690; si se reactivan con el precio de hoy las cuentas no cierran.</td>
+        <td>El inventario sigue en −24 unidades: se vendieron 24 bombachas más de las que había cargadas. Shopify
+        muestra el total del producto en 0, que no coincide con la suma de las variantes.</td>
       </tr>
       <tr>
         <td>Descuentos sin producto</td>
         <td>«Sombrero · pack de 2 — $5.150» y «Sombrero · pack de 3 — $6.190» están expirados y ya no apuntan a
-        ningún producto publicado.</td>
-      </tr>
-      <tr>
-        <td>Mate Ranchero — pack de 3</td>
-        <td>Ya no está por debajo del 50%: pasó de 48,6% a 52,0%. Queda anotado porque sigue siendo el escalón
-        de descuento más flaco de los productos con costo cargado.</td>
+        ningún producto publicado. «Pack de 2 — $2.890» y «Pack de 3 — $3.490» de la bombacha también figuran
+        EXPIRADOS.</td>
       </tr>
     </tbody>
   </table>
