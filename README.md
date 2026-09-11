@@ -10,7 +10,7 @@ Ver [`tipografia/README.md`](tipografia/README.md) para el detalle.
 
 ## Piezas de Instagram — Dulce Piel
 
-La carpeta [`dulce-piel/`](dulce-piel/) contiene las ocho piezas de Instagram
+La carpeta [`dulce-piel/`](dulce-piel/) contiene las ocho piezas de Instagram (los posteos de feed, también en 4:5)
 de Dulce Piel (historias, posteo de feed y portadas de destacadas) con sus
 fuentes HTML, el sistema de marca y los PNG exportados en medida nativa.
 

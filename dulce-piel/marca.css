@@ -47,6 +47,8 @@ body {
 }
 .dp-lienzo--historia  { width: 1080px; height: 1920px; }
 .dp-lienzo--feed      { width: 1080px; height: 1080px; }
+/* Feed vertical 4:5, la medida que más pantalla ocupa en el timeline */
+[data-formato="45"] .dp-lienzo--feed { height: 1350px; }
 .dp-lienzo--destacada { width: 1080px; height: 1920px; }
 
 /* --------------------------------------------------------------------------

@@ -115,7 +115,15 @@
       </svg>`
   };
 
+  /* El formato se pide por querystring: pieza.html?f=45 dibuja el lienzo en
+     4:5 (1080x1350) en lugar del cuadrado. */
+  function formato() {
+    var f = new URLSearchParams(location.search).get('f');
+    if (f) { document.documentElement.setAttribute('data-formato', f); }
+  }
+
   function pintar() {
+    formato();
     document.querySelectorAll('[data-dp]').forEach(function (nodo) {
       var clave = nodo.getAttribute('data-dp');
       nodo.innerHTML = ICONOS[clave] || '';

@@ -17,6 +17,21 @@ misma estructura y jerarquía de información.
 | `salida/07-compra-por-mensaje.png` | 1080×1080 | Posteo de feed "Comprá por mensaje" |
 | `salida/08-te-lo-llevamos.png` | 1080×1080 | Posteo de feed "Te lo llevamos a todo el país" |
 
+Los tres posteos de feed salen además en **4:5 (1080×1350)**, la medida
+vertical que más pantalla ocupa en el timeline:
+
+| Archivo | Medida |
+|---|---|
+| `salida/02-compra-en-la-web-4x5.png` | 1080×1350 |
+| `salida/07-compra-por-mensaje-4x5.png` | 1080×1350 |
+| `salida/08-te-lo-llevamos-4x5.png` | 1080×1350 |
+
+Las dos medidas salen del **mismo HTML**: el formato se pide por querystring
+(`02-compra-en-la-web.html?f=45`), así que un cambio de texto o de color se
+hace una sola vez y afecta a las dos. Cada pieza de feed tiene al final de su
+`<style>` un bloque `[data-formato="45"]` con los cuerpos y espaciados propios
+del formato vertical.
+
 Los HTML que las generan están en `piezas/`. Para volver a exportarlas después
 de tocar un texto o un color:
 
