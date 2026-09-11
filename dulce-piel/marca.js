@@ -1,23 +1,12 @@
 /* ==========================================================================
-   DULCE PIEL — Logotipo e iconografía
+   DULCE PIEL — Iconografía
    --------------------------------------------------------------------------
-   Un solo lugar para el logo y los iconos: cada pieza los pide con
-   <i data-dp="logo"></i> o <i data-dp="camion"></i> y este script los dibuja.
-   Para reemplazar el isotipo por el archivo original de la marca, basta con
-   cambiar el SVG de ISOTIPO.
+   Un solo lugar para los iconos: cada pieza los pide con
+   <i data-dp="camion"></i> y este script los dibuja.
+   El logotipo es sólo tipográfico (la palabra DULCE PIEL, clase .dp-marca en
+   marca.css): no lleva isotipo.
    ========================================================================== */
 (function () {
-  /* Isotipo: gota sobre hojas, con el filete inferior de la marca. */
-  var ISOTIPO = `
-    <svg viewBox="0 0 120 100" fill="none" stroke="currentColor"
-         stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M60 8c-8 12-11.5 17-11.5 22.5a11.5 11.5 0 0 0 23 0C71.5 25 68 20 60 8z"/>
-      <path d="M60 44v30"/>
-      <path d="M60 60c-3-9-11-15-24-16 1 12 9 19 24 16z"/>
-      <path d="M60 60c3-9 11-15 24-16-1 12-9 19-24 16z"/>
-      <path d="M26 88h68" stroke-width="2.6"/>
-    </svg>`;
-
   var ICONOS = {
     /* Globo terráqueo con cursor: "entrá a la web" */
     globo: `
@@ -99,7 +88,7 @@
   function pintar() {
     document.querySelectorAll('[data-dp]').forEach(function (nodo) {
       var clave = nodo.getAttribute('data-dp');
-      nodo.innerHTML = clave === 'logo' ? ISOTIPO : (ICONOS[clave] || '');
+      nodo.innerHTML = ICONOS[clave] || '';
       nodo.style.display = 'block';
       var svg = nodo.querySelector('svg');
       if (svg) { svg.style.width = '100%'; svg.style.height = '100%'; }

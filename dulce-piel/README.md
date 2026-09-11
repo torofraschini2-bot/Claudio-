@@ -1,8 +1,8 @@
 # Dulce Piel — Piezas de Instagram
 
 Las mismas cinco piezas de Rancho Doble, rehechas con identidad propia de
-Dulce Piel: otro logotipo, otra paleta y otras tipografías, con la misma
-estructura y jerarquía de información.
+Dulce Piel: logotipo tipográfico, otra paleta y otras tipografías, con la
+misma estructura y jerarquía de información.
 
 ## Piezas
 
@@ -61,8 +61,8 @@ Las tres son de Google Fonts (SIL Open Font License 1.1) y están incluidas en
 
 - **Colores**: `marca.css`, bloque `:root`. Cambiar una variable cambia las
   cinco piezas.
-- **Logotipo**: `marca.js`, constante `ISOTIPO`. El isotipo actual (gota sobre
-  hojas con filete) es un dibujo hecho para estas piezas; si existe el archivo
-  original de la marca, se pega ese SVG ahí y se propaga solo.
+- **Logotipo**: es sólo tipográfico, la palabra `Dulce Piel` con la clase
+  `.dp-marca` (definida en `marca.css`). No lleva isotipo. Para cambiar cuerpo,
+  peso o interletrado se toca `.dp-marca` y `--dp-marca-tracking`.
 - **Textos y teléfono**: están escritos en cada HTML de `piezas/`, en texto
   plano.
