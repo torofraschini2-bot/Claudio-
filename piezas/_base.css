@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 400 900;
+  src: url("../tipografia/fuentes/Cinzel-VariableFont_wght.ttf") format("truetype");
+}
+
+:root {
+  --fondo:   #1C2720;   /* verde oscuro de fondo */
+  --verde:   #425249;   /* verde de la tela */
+  --beige:   #B9A794;   /* acento */
+  --beige-2: #8C7B6D;
+  --crema:   #F2EFEA;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--crema);
+  font-family: "Cinzel", Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pieza {
+  position: relative;
+  background: var(--fondo);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Franjas diagonales superior e inferior */
+.franja {
+  position: absolute;
+  left: 0; right: 0;
+  height: 38px;
+  background: repeating-linear-gradient(
+    115deg,
+    var(--beige) 0 26px,
+    var(--fondo) 26px 52px
+  );
+}
+.franja--arriba { top: 0; }
+.franja--abajo  { bottom: 0; }
+
+/* Textura gastada sobre las palabras grandes */
+.textura {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)' opacity='0.30'/%3E%3C/svg%3E"),
+    linear-gradient(var(--crema), var(--crema));
+  background-blend-mode: multiply;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Marca */
+.marca {
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-indent: 0.14em;
+  color: var(--crema);
+  line-height: 1;
+  margin: 0;
+}
+
+.regla {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+}
+.regla i {
+  display: block;
+  height: 2px;
+  background: var(--beige);
+  flex: 0 0 auto;
+}
+.rombo { color: var(--beige); line-height: 1; }
+
+.titulo-chico {
+  font-weight: 700;
+  letter-spacing: 0.10em;
+  text-indent: 0.10em;
+  color: var(--beige);
+  line-height: 1;
+  margin: 0;
+}
+
+.titulo-grande {
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-indent: 0.02em;
+  line-height: 0.92;
+  margin: 0;
+}
+
+.pie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  color: var(--beige);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-indent: 0.16em;
+}

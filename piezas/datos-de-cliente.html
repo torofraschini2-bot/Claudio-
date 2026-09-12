@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Rancho Doble — Datos de cliente</title>
+<link rel="stylesheet" href="_base.css">
+<style>
+  .pieza { width: 1080px; height: 1080px; padding: 62px 66px; justify-content: space-between; }
+
+  .cabecera { text-align: center; }
+  .marca { font-size: 66px; }
+  .cabecera .regla { margin-top: 18px; }
+  .cabecera .regla i { width: 124px; }
+
+  .bloque-titulo { text-align: center; }
+  .estrella { color: var(--beige); font-size: 32px; line-height: 1; margin-bottom: 16px; }
+  .titulo-chico { font-size: 66px; }
+  .titulo-grande { font-size: 154px; margin-top: 4px; }
+  .bloque-titulo .regla { margin-top: 26px; }
+  .bloque-titulo .regla i { width: 300px; }
+
+  .campos { width: 100%; display: flex; flex-direction: column; gap: 30px; }
+  .campo { display: flex; align-items: center; gap: 26px; }
+  .icono {
+    flex: 0 0 auto;
+    width: 78px; height: 78px;
+    border-radius: 50%;
+    border: 3px solid var(--beige);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--crema);
+  }
+  .icono svg { display: block; }
+  .rotulo {
+    flex: 0 0 auto;
+    font-weight: 700; font-size: 33px;
+    letter-spacing: 0.08em; text-indent: 0.08em;
+    color: var(--crema);
+  }
+  .linea {
+    flex: 1 1 auto;
+    border-bottom: 4px dotted rgba(242,239,234,.55);
+    height: 28px;
+  }
+
+  .pie { font-size: 26px; }
+  .pie svg { display: block; }
+</style>
+</head>
+<body>
+<div class="pieza">
+  <div class="franja franja--arriba"></div>
+  <div class="franja franja--abajo"></div>
+
+  <div class="cabecera">
+    <p class="marca">Rancho Doble</p>
+    <div class="regla"><i></i><span class="rombo">&#10022;</span><i></i></div>
+  </div>
+
+  <div class="bloque-titulo">
+    <div class="estrella">&#10022;</div>
+    <p class="titulo-chico">Datos de</p>
+    <p class="titulo-grande textura">Cliente</p>
+    <div class="regla"><i></i><span class="rombo">&#10022;</span><i></i></div>
+  </div>
+
+  <div class="campos">
+    <div class="campo">
+      <div class="icono">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>
+        </svg>
+      </div>
+      <div class="rotulo">Nombre:</div>
+      <div class="linea"></div>
+    </div>
+
+    <div class="campo">
+      <div class="icono">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <rect x="2.5" y="5" width="19" height="14" rx="2.5"/>
+          <circle cx="8.5" cy="11" r="2.2"/><path d="M5 16.2c.7-1.4 2-2.1 3.5-2.1s2.8.7 3.5 2.1"/>
+          <path d="M15 10h4M15 13.5h4"/>
+        </svg>
+      </div>
+      <div class="rotulo">C&eacute;dula:</div>
+      <div class="linea"></div>
+    </div>
+
+    <div class="campo">
+      <div class="icono">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6.5 3h3l1.6 4-2 1.4a12 12 0 0 0 5.5 5.5l1.4-2 4 1.6v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.2 2 2 0 0 1 6.5 3z"/>
+        </svg>
+      </div>
+      <div class="rotulo">Tel&eacute;fono:</div>
+      <div class="linea"></div>
+    </div>
+
+    <div class="campo">
+      <div class="icono">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 21.5s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10.2" r="2.6"/>
+        </svg>
+      </div>
+      <div class="rotulo">Destino:</div>
+      <div class="linea"></div>
+    </div>
+  </div>
+
+  <div class="pie">
+    <span class="rombo">&#10022;</span>
+    <svg width="26" height="23" viewBox="0 0 24 22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20S2.5 13.5 2.5 7.5A5 5 0 0 1 12 5a5 5 0 0 1 9.5 2.5C21.5 13.5 12 20 12 20z"/></svg>
+    <span>&iexcl;Gracias por elegirnos!</span>
+    <svg width="26" height="23" viewBox="0 0 24 22" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20S2.5 13.5 2.5 7.5A5 5 0 0 1 12 5a5 5 0 0 1 9.5 2.5C21.5 13.5 12 20 12 20z"/></svg>
+    <span class="rombo">&#10022;</span>
+  </div>
+</div>
+</body>
+</html>
